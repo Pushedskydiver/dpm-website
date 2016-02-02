@@ -93,16 +93,9 @@
         })
     }
 
-
-    WSD.prototype.initUnveilPlugin = function() {
-        // lazy load retina images
-        $.fn.unveil && $("img").unveil();
-    }
-
     // Call initializers
     WSD.prototype.init = function() {
         this.setBackgroundImage();
-        this.initUnveilPlugin();
     }
 
     $.WSD = new WSD();
