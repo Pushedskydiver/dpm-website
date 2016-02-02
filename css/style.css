@@ -1,0 +1,329 @@
+/*------------------------------------*\
+    #1 GENERAL-STYLES
+\*------------------------------------*/
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #222222;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+      -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+}
+
+body ::-moz-selection {
+  background: #004184;
+  color: #fff;
+}
+
+body ::selection {
+  background: #004184;
+  color: #fff;
+}
+
+body.mobile {
+  position: relative;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+  position: absolute;
+  z-index: 999;
+}
+
+nav {
+  position: relative;
+}
+
+main {
+  position: relative;
+  z-index: 3;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  position: relative;
+  width: auto;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0 10px 0;
+  -webkit-font-smoothing: antialiased;
+
+  -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  height: 1px;
+  width: 15%;
+  background: #004184;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2  {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h3  {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+a {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+
+  transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+hr {
+  margin: 35px auto;
+  border-color: #d9d9d9;
+  font-size: 0;
+  max-width: 1110px
+}
+
+hr.hr-nobg {
+  border-color: transparent;
+}
+
+nav:before, nav:after, .logo:before, .logo:after, .main-nav:before,
+.main-nav:after, .container:before, .container:after, .container-fluid:before,
+.container-fluid:after, .col15:before, .col15:after, .col50:before,
+.col50:after, .col85:before, .col85:after, .row:before, .row:after,
+.main-home:before, .main-home:after {
+  display: table;
+  content: " ";
+}
+
+.clearlist, .clearlist li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+nav:after, .logo:after, .row:after, .clearfix:after, .container-fluid:after,
+.container:after {
+  clear: both;
+}
+
+.row, .clearfix {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flex-container {
+  display: -webkit-box;
+    display: -ms-flexbox;
+      display: -webkit-flex;
+        display: flex;
+
+  -webkit-box-orient: column;
+    -webkit-box-direction: column;
+      -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.col {
+  min-height: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.col100 {
+  width: 100%;
+}
+
+/* Helpers */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.no-margin { margin: 0; }
+.no-padding { padding: 0;}
+
+
+
+
+
+/*------------------------------------*\
+    #13 BACK-TO-TOP-STYLES
+\*------------------------------------*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 800;
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 65, 132, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+      transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+      transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #004184;
+  opacity: 1;
+}
