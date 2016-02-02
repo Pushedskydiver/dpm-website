@@ -55,15 +55,450 @@
         }
     }
 
+    WSD.prototype.setBackgroundImage = function() {
+        $('[data-pages-bg-image]').each(function() {
+            var _elem = $(this)
+            var defaults = {
+                pagesBgImage: "",
+                lazyLoad: 'true',
+                progressType: '',
+                progressColor:'',
+                bgOverlay:'',
+                bgOverlayClass:'',
+                overlayOpacity:0,
+            }
+            var data = _elem.data();
+            $.extend( defaults, data );
+            var url = defaults.pagesBgImage;
+            var color = defaults.bgOverlay;
+            var opacity = defaults.overlayOpacity;
+
+            var overlay = $('<div class="bg-overlay"></div>');
+            overlay.addClass(defaults.bgOverlayClass);
+            overlay.css({
+                'background-color': color,
+                'opacity': 1
+            });
+            _elem.append(overlay);
+
+            var img = new Image();
+            img.src = url;
+            img.onload = function(){
+                _elem.css({
+                    'background-image': 'url(' + url + ')'
+                });
+                _elem.children('.bg-overlay').css({'opacity': opacity});
+            }
+
+        })
+    }
+
+
+    WSD.prototype.initUnveilPlugin = function() {
+        // lazy load retina images
+        $.fn.unveil && $("img").unveil();
+    }
+
+    // Call initializers
+    WSD.prototype.init = function() {
+        this.setBackgroundImage();
+        this.initUnveilPlugin();
+    }
+
     $.WSD = new WSD();
     $.WSD.Constructor = WSD;
 
 })(window.jQuery);
 
 /* ============================================================
- * Call Plugins
+ * Header Plugin
  * ============================================================ */
 
-function functionName() {
+(function($) {
+    'use strict';
 
-}
+    var Header = function(element, options) {
+        this.$body = $('body');
+        this.$element = $(element);
+        this.options = $.extend(true, {}, $.fn.header.defaults, options);
+        if (this.$element.attr('data-pages-header') == "autoresize")
+            this.options.autoresize = true
+
+        if (this.$element.attr('data-pages-header') != null)
+            this.options.minimizedClass = this.options.minimizedClass + ' ' + this.$element.attr('data-pages-resize-class');
+
+        this.initAffix();
+    }
+    Header.prototype.initAffix = function() {
+        if (this.$element.attr('data-pages-autofixed') == "true") {
+            this.$element.affix({
+                offset: {
+                    top: this.$element.offset().top,
+                }
+            });
+        }
+    };
+    Header.prototype.updateAffix = function() {
+        if (this.$element.attr('data-pages-autofixed') == "true") {
+            console.log(this.$element.offset().top)
+            this.$element.removeData('affix').removeClass('affix affix-top affix-bottom');
+            this.$element.affix({
+                offset: this.$element.offset().top
+            })
+        }
+    };
+    Header.prototype.addMinimized = function() {
+        if (this.options.autoresize && !this.$element.hasClass('affix-top'))
+            if (!this.$element.hasClass(this.options.minimizedClass))
+                this.$element.addClass(this.options.minimizedClass);
+    };
+    Header.prototype.removeMinized = function() {
+        if (this.options.autoresize || this.$element.hasClass('affix-top'))
+            this.$element.removeClass(this.options.minimizedClass);
+    };
+
+    function Plugin(option) {
+        return this.each(function() {
+            var $this = $(this);
+            var data = $this.data('pg.header');
+            var options = typeof option == 'object' && option;
+
+            if (!data) $this.data('pg.header', (data = new Header(this, options)));
+            if (typeof option == 'string') data[option]();
+        })
+    }
+
+    var old = $.fn.header
+
+    $.fn.header = Plugin
+    $.fn.header.Constructor = Header
+
+
+    $.fn.header.defaults = {
+        duration: 350,
+        autoresize: false,
+        minimizedClass: 'minimized'
+    }
+
+    // HEADER NO CONFLICT
+    // ====================
+
+    $.fn.header.noConflict = function() {
+        $.fn.header = old;
+        return this;
+    }
+
+    // HEADER DATA API
+    //===================
+    $(document).ready(function() {
+        $('.menu > li > a').on('mouseenter click', function(e) {
+            if ($(this).parent().hasClass('mega')) {
+                if ($(this).parent().hasClass('open')) {
+                    $(this).parents('.container').removeClass('clip-mega-menu');
+                } else {
+                    $(this).parents('.container').addClass('clip-mega-menu');
+                }
+
+            } else {
+                $(this).parents('.container').removeClass('clip-mega-menu');
+
+
+            }
+            $(this).parent().toggleClass('open').siblings().removeClass('open');
+
+        });
+        // $('.menu > li > nav').on('mouseenter mouseleave click', function () {
+        //     var el = $(this).parent();
+        //     if(!el.hasClass('open'))
+        //         el.addClass('open');
+        //     else
+        //         el.removeClass('open');
+        // })
+
+        $('.desktop .menu > li > nav').on('mouseleave', function(e) {
+             $('.menu > li').removeClass('open');
+
+        });
+    })
+
+    $(window).on('load', function() {
+        $('[data-pages="header"]').each(function() {
+            var $header = $(this)
+            $header.header($header.data())
+        })
+    });
+
+    $('[data-pages="header-toggle"]').on('click touchstart', function(e) {
+        e.preventDefault();
+        var el = $(this)
+
+        var header = el.attr('data-pages-element');
+        $('body').toggleClass('menu-opened');
+        $('[data-pages="header-toggle"]').toggleClass('on');
+
+    });
+    $(window).on("resize", function() {
+        $('[data-pages="header"]').header('updateAffix');
+    })
+    $(window).on("scroll", function() {
+        var ScrollTop = parseInt($(window).scrollTop());
+        if (ScrollTop > 1) {
+            $('[data-pages="header"]').header('addMinimized');
+        } else {
+            if (ScrollTop < 10) {
+                $('[data-pages="header"]').header('removeMinized');
+            }
+        }
+    });
+
+})(window.jQuery);
+
+/* ============================================================
+ * WSD Parallax Plugin
+ * ============================================================ */
+
+$(document).ready(function() {
+    'use strict';
+    //Intialize Slider
+    var slider = new Swiper('#hero', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        parallax: true,
+        speed: 1000,
+    });
+});
+
+
+(function($) {
+    'use strict';
+    // PARALLAX CLASS DEFINITION
+    // ======================
+
+    var Parallax = function(element, options) {
+        this.$element = $(element);
+        this.$body = $('body');
+        this.options = $.extend(true, {}, $.fn.parallax.defaults, options);
+        this.$coverPhoto = this.$element.find('.cover-photo');
+        // TODO: rename .inner to .page-cover-content
+        this.$content = this.$element.find('.inner');
+
+        // if cover photo img is found make it a background-image
+        if (this.$coverPhoto.find('> img').length) {
+            var img = this.$coverPhoto.find('> img');
+            this.$coverPhoto.css('background-image', 'url(' + img.attr('src') + ')');
+            img.remove();
+        }
+        this.translateBgImage();
+    }
+    Parallax.VERSION = "1.0.0";
+
+    Parallax.prototype.animate = function(translate) {
+
+        var scrollPos;
+        var pagecoverHeight = this.$element.height();
+        //opactiy to text starts at 50% scroll length
+        var opacityKeyFrame = pagecoverHeight * 50 / 100;
+        var direction = 'translateX';
+
+        scrollPos = $(window).scrollTop();
+        if (this.$body.hasClass('mobile')) {
+            scrollPos = -(translate);
+        }
+        direction = 'translateY';
+
+        this.$coverPhoto.css({
+            'transform': direction + '(' + scrollPos * this.options.speed.coverPhoto + 'px)'
+        });
+
+        this.$content.css({
+            'transform': direction + '(' + scrollPos * this.options.speed.content + 'px)',
+        });
+
+
+        this.translateBgImage();
+
+
+    }
+
+    Parallax.prototype.translateBgImage = function() {
+            var scrollPos = $(window).scrollTop();
+            var pagecoverHeight = this.$element.height();
+            if (this.$element.attr('data-pages-bg-image')) {
+                var relativePos = this.$element.offset().top - scrollPos;
+
+                // if element is in visible window's frame
+                if (relativePos > -pagecoverHeight && relativePos <= $(window).height()) {
+                    var displacePerc = 100 - ($(window).height() - relativePos) / ($(window).height() + pagecoverHeight) * 100;
+                    this.$element.css({
+                        'background-position': 'center ' + displacePerc + '%'
+                    });
+                }
+            }
+        }
+        // PARALLAX PLUGIN DEFINITION
+        // =======================
+    function Plugin(option) {
+        return this.each(function() {
+            var $this = $(this);
+            var data = $this.data('pg.parallax');
+            var options = typeof option == 'object' && option;
+
+            if (!data) $this.data('pg.parallax', (data = new Parallax(this, options)));
+            if (typeof option == 'string') data[option]();
+        })
+    }
+
+    var old = $.fn.parallax
+
+    $.fn.parallax = Plugin
+    $.fn.parallax.Constructor = Parallax
+
+
+    $.fn.parallax.defaults = {
+        speed: {
+            coverPhoto: 0.3,
+            content: 0.17
+        }
+    }
+
+    // PARALLAX NO CONFLICT
+    // ====================
+
+    $.fn.parallax.noConflict = function() {
+        $.fn.parallax = old;
+        return this;
+    }
+
+    // PARALLAX DATA API
+    //===================
+
+    $(window).on('load', function() {
+
+        $('[data-pages="parallax"]').each(function() {
+            var $parallax = $(this)
+            $parallax.parallax($parallax.data())
+        })
+    });
+
+    $(window).on('scroll', function() {
+        // Disable parallax for Touch devices
+
+        $('[data-pages="parallax"]').parallax('animate');
+    });
+
+})(window.jQuery);
+
+/* ============================================================
+ * WSD Float Plugin
+ * ============================================================ */
+
+(function($) {
+    'use strict';
+    // FLOAT CLASS DEFINITION
+    // ======================
+
+    var Float = function(element, options) {
+        this.$element = $(element);
+        this.options = $.extend(true, {}, $.fn.pgFloat.defaults, options);
+
+        var _this = this;
+        var _prevY;
+
+        function update() {
+            var element = _this.$element;
+            var w = $(window).scrollTop();
+            var translateY = (w - element.offset().top) * _this.options.speed;
+            var delay = _this.options.delay / 1000; //in seconds
+            var curve = _this.options.curve;
+            var maxTopTranslate = _this.options.maxTopTranslate;
+            var maxBottomTranslate = _this.options.maxBottomTranslate;
+
+            if (maxTopTranslate == 0) {
+                if (element.offset().top + element.outerHeight() < w) return;
+            }
+
+            if (maxBottomTranslate == 0) {
+                if (element.offset().top > w + $(window).height()) return;
+            }
+
+            if (_prevY < translateY) { // scroll down, element will hide from top
+                if (maxTopTranslate != 0 && Math.abs(translateY) > maxTopTranslate) return;
+            } else {
+                if (maxBottomTranslate != 0 && Math.abs(translateY) > maxBottomTranslate) return;
+            }
+
+
+            element.css({
+                'transition': 'transform ' + delay + 's ' + curve,
+                'transform': 'translateY(' + translateY + 'px)',
+            });
+
+            _prevY = translateY;
+        }
+
+        $(window).bind('scroll', function() {
+            update()
+        });
+        $(window).bind('load', function() {
+            update()
+        });
+    }
+    Float.VERSION = "1.0.0";
+
+
+
+    // FLOAT PLUGIN DEFINITION
+    // =======================
+    function Plugin(option) {
+        return this.each(function() {
+            var $this = $(this);
+            var data = $this.data('pgFloat');
+            var options = typeof option == 'object' && option;
+
+            if (!data) $this.data('pgFloat', (data = new Float(this, options)));
+            if (typeof option == 'string') data[option]();
+        })
+    }
+
+    var old = $.fn.pgFloat;
+
+    $.fn.pgFloat = Plugin;
+    $.fn.pgFloat.Constructor = Float;
+
+
+    $.fn.pgFloat.defaults = {
+        topMargin: 0,
+        bottomMargin: 0,
+        speed: 0.1,
+        delay: 1000,
+        curve: 'ease'
+    }
+
+    // FLOAT NO CONFLICT
+    // ====================
+
+    $.fn.pgFloat.noConflict = function() {
+        $.fn.pgFloat = old;
+        return this;
+    }
+
+    // FLOAT DATA API
+    //===================
+
+    $(window).on('load', function() {
+
+        $('[data-pages="float"]').each(function() {
+            var $pgFloat = $(this)
+            $pgFloat.pgFloat($pgFloat.data())
+        })
+    });
+
+})(window.jQuery);
+(function($) {
+    'use strict';
+    // Initialize layouts and plugins
+    (typeof angular === 'undefined') && $.WSD.init();
+})(window.jQuery);

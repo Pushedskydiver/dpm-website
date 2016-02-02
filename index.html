@@ -18,10 +18,212 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pages-icon.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
   </head>
   <body>
+
+    <!--******************** HEADER : Start ********************-->
+    <header class="header">
+      <!-- BEGIN : NAVIGATION -->
+      <div class="transparent-dark " data-pages="header" data-pages-header="autoresize" data-pages-resize-class="dark" id="nav">
+        <!-- BEGIN : CONTAINER -->
+        <div class="container">
+          <!-- BEGIN : ROW -->
+          <div class="row">
+            <!-- BEGIN : LEFT CONTENT -->
+            <div class="logo-container pull-left col">
+              <!-- BEGIN : HEADER INNER-->
+              <div class="header-inner">
+                <!-- BEGIN : LOGO -->
+                <div class="logo">
+                  <a href="#"><img src="images/logo.png" width="50" alt=""></a>
+                </div>
+                <!-- END : LOGO -->
+              </div>
+              <!-- END : HEADER INNER-->
+            </div>
+            <!-- BEGIN : HEADER TOGGLE FOR MOBILE & TABLET -->
+            <div class="pull-right col">
+              <div class="header-inner">
+                <div class="menu-toggler pull-right p-l-10" data-pages="header-toggle" data-pages-element="#header">
+                  <div class="one"></div>
+                  <div class="two"></div>
+                  <div class="three"></div>
+                </div>
+              </div>
+            </div>
+            <!-- END : HEADER TOGGLE FOR MOBILE & TABLET -->
+            <!-- BEGIN : RIGHT CONTENT -->
+            <div class="menu-content mobile-dark pull-right clearfix" data-pages-direction="slideRight" id="header">
+              <!-- BEGIN : HEADER CLOSE TOGGLE FOR MOBILE -->
+              <div class="pull-right">
+                <a href="#" class="pull-right close-nav" data-pages="header-toggle" data-pages-element="#header">
+                  <i class="pg-close_line"></i>
+                </a>
+              </div>
+              <!-- END : HEADER CLOSE TOGGLE FOR MOBILE -->
+              <!-- BEGIN : MENU ITEMS -->
+              <div class="header-inner">
+                <!-- BEGIN : MAIN MENU -->
+                <ul class="menu">
+                  <li class="active"><a href="index.html" class="active">Home</a></li
+                  ><li><a href="course-information.html">Course Information</a></li
+                  ><li><a href="#">Accommodation</a></li
+                  ><li><a href="#">Student Finance</a></li
+                  ><li><a href="#">Student Services</a></li
+                  ><li><a href="#">Employment</a></li
+                  ><li><a href="#">Transport</a></li
+                  ><li class="classic"><a href="javascript:;">Leisure <i class="pg-arrow_minimize m-l-5"></i></a>
+                    <!-- BEGIN : SUB MENU -->
+                    <nav class="classic">
+                      <span class="arrow"></span>
+                      <ul>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Museums &amp; Galleries</a></li>
+                        <li><a href="#">Nightlife</a></li>
+                      </ul>
+                    </nav>
+                    <!-- END : SUB MENU -->
+                  </li>
+                </ul>
+                <!-- END : MAIN MENU -->
+                <!-- BEGIN : COPYRIGHT FOR MOBILE -->
+                <div class="mobile-copyright">
+                  <p class="copyright-info">MMU Information &amp; Communications Department, Group 2 WSD Student Work.</p>
+                  <p class="copyright">&copy; Manchester Metropolitan University 2016.</p>
+                </div>
+                <!-- END : COPYRIGHT FOR MOBILE -->
+                <!-- BEGIN : MOBILE SOCIAL -->
+                <div class="mobile-social">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+                <!-- END : MOBILE SOCIAL -->
+              </div>
+              <!-- END : MENU ITEMS -->
+            </div>
+            <!-- END : RIGHT CONTENT -->
+          </div>
+          <!-- END : ROW -->
+        </div>
+        <!-- END : CONTAINER -->
+      </div>
+      <!-- END : NAVIGATION -->
+    </header>
+    <!--******************** HEADER : End ********************-->
+
+
+
+
+
+    <!--******************** MAIN CONTENT : Start ********************-->
+    <section class="home-slider" data-pages="parallax">
+      <div class="inner full-height">
+        <!-- BEGIN : SLIDER -->
+        <div class="swiper-container" id="hero">
+          <div class="swiper-wrapper">
+            <!-- BEGIN : SLIDE -->
+            <div class="swiper-slide fit">
+              <!-- BEGIN : IMAGE PARRALAX -->
+              <div class="slider-wrapper">
+                <div class="background-wrapper" data-swiper-parallax="30%">
+                  <div class="background" data-pages-bg-image="images/slider//bg.jpg"></div>
+                </div>
+              </div>
+              <!-- END : IMAGE PARRALAX -->
+              <!-- BEGIN : CONTENT -->
+              <div class="content-layer">
+                <div class="overlay"></div>
+                <div class="inner full-height">
+                  <div class="container-xs-height full-height">
+                    <div class="col-xs-height col-middle">
+                      <div class="container">
+                        <div class="col col100">
+                          <h1 class="sm-text-center" data-swiper-parallax="-15%">Lorem ipsum dolor sit amet consectetur</h1>
+                          <h5 class="sm-text-center">Excepteur sint occaecat cupidatat non proident sunt in culpa.</h5>
+                          <!-- START: Read More button -->
+                          <div class="sm-text-center read-more-home">
+                            <a href="#content">Start Scrolling</a>
+                          </div>
+                          <!-- END: Read More -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END : CONTENT -->
+            </div>
+            <!-- END : SLIDE -->
+            <!-- BEGIN : SLIDE -->
+            <div class="swiper-slide fit">
+              <!-- BEGIN : IMAGE PARRALAX -->
+              <div class="slider-wrapper">
+                <div class="background-wrapper" data-swiper-parallax="30%">
+                  <!-- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes -->
+                  <div class="background" data-pages-bg-image="images/slider/bg2.jpg"></div>
+                </div>
+              </div>
+              <!-- END : IMAGE PARRALAX -->
+              <!-- BEGIN : CONTENT -->
+              <div class="content-layer">
+                <div class="inner full-height">
+                  <div class="container-xs-height full-height">
+                    <div class="col-xs-height col-middle text-left">
+                      <div class="container">
+                        <div class="col col100 no-padding">
+                          <h1 class="sm-text-center" data-swiper-parallax="-15%">Lorem ipsum dolor sit amet.</h1>
+                          <h5 class="sm-text-center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END : CONTENT -->
+            </div>
+            <!-- END : SLIDE -->
+            <!-- BEGIN : SLIDE -->
+            <div class="swiper-slide fit">
+              <!-- BEGIN : IMAGE PARRALAX -->
+              <div class="slider-wrapper">
+                <div class="background-wrapper" data-swiper-parallax="30%">
+                  <div class="background" data-pages-bg-image="images/slider/bg3.jpg"></div>
+                </div>
+              </div>
+              <!-- END : IMAGE PARRALAX -->
+              <!-- BEGIN : CONTENT -->
+              <div class="content-layer">
+                <div class="inner full-height">
+                  <div class="container-xs-height full-height">
+                    <div class="col-xs-height col-middle text-left">
+                      <div class="container">
+                        <div class="col col100 no-padding">
+                          <h1 class="sm-text-center" data-swiper-parallax="-15%">Duis aute irure dolor in reprehenderit</h1>
+                          <h5 class="sm-text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END : CONTENT -->
+            </div>
+            <!-- END : SLIDE -->
+          </div>
+          <!-- Add Navigation -->
+          <div class="swiper-navigation swiper-dark-solid swiper-button-prev auto-reveal"></div>
+          <div class="swiper-navigation swiper-dark-solid swiper-button-next auto-reveal"></div>
+        </div>
+      </div>
+      <!-- END : SLIDER -->
+    </section>
+    <!--******************** MAIN CONTENT : End ********************-->
 
 
     <!-- BEGIN : BACK TO TOP BUTTON -->
@@ -37,6 +239,7 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script>new WOW().init();</script>
 
