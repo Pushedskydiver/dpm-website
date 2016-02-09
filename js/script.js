@@ -2,6 +2,30 @@
 
     'use strict';
 
+    // ======================================
+    // Smooth Scroll to Top button
+    // ======================================
+    function init_smooth_scroll_top() {
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 300,
+        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+        offset_opacity = 1200,
+        //duration of the top scrolling animation (in ms)
+        scroll_top_duration = 1500,
+        //grab the "back to top" link
+        $back_to_top = $('.cd-top');
+
+        //hide or show the "back to top" link
+        $(window).scroll(function() {
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if ( $(this).scrollTop() > offset_opacity ) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+    }
+
+    init_smooth_scroll_top();
+
     var WSD = function() {
         this.VERSION = "1.1.0";
         this.AUTHOR = "Alex Clapperton";
@@ -87,7 +111,6 @@
                 _elem.css({
                     'background-image': 'url(' + url + ')'
                 });
-                _elem.children('.bg-overlay').css({'opacity': opacity});
             }
 
         })
