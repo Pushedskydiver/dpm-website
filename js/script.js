@@ -43,6 +43,40 @@
         });
     }
 
+
+    // ======================================
+    // Accordion jumps
+    // ======================================
+    $.fn.lvAccordion = function(){
+
+  		var $this = $(this),
+  		    isToggle = $this.hasClass( 'm-toggle' ) ? true : false,
+  		    items = $this.find( '> div' );
+
+  		items.filter( '.m-active' ).find( '.panel-content' ).slideDown( 300 );
+
+  		$this.find( '.panel-title' ).click(function(){
+  			if ( ! $(this).parent().hasClass( 'm-active' ) ) {
+  				if ( ! isToggle ) {
+  					items.filter( '.m-active' ).find( '.panel-content' ).slideUp(300);
+  					items.filter( '.m-active' ).removeClass( 'm-active' );
+  				}
+  				$(this).parent().find( '.panel-content' ).slideDown(300);
+  				$(this).parent().addClass( 'm-active' );
+  			}
+  			else {
+  				$(this).parent().find( '.panel-content' ).slideUp(300);
+  				$(this).parent().removeClass( 'm-active' );
+  			}
+  		});
+
+  	};
+  	if ( $.fn.lvAccordion ) {
+  		$( '.jump-panel' ).each(function(){
+  			$(this).lvAccordion();
+  		});
+  	}
+
     init_smooth_scroll();
     init_smooth_scroll_top();
 
