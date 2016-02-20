@@ -1997,17 +1997,12 @@ footer h3 {
     display: none;
   }
 
-  main.main-content .flex-container {
-    -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-            flex-direction: row;
+  section.banner-section {
+    height: 600px;
+  }
 
-    -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-          justify-content: space-between;
+  section.banner-section .flex-container {
+    height: calc(600px - 60px);
   }
 
   section.banner-section h1 {
@@ -2020,6 +2015,19 @@ footer h3 {
 
   section.banner-section i {
     font-size: 2.7rem;
+  }
+
+  main.main-content .flex-container {
+    -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+          justify-content: space-between;
   }
 
   main.main-content h1 {
