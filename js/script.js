@@ -3,23 +3,27 @@
     'use strict';
 
     // ======================================
-    // Smooth Sctoll
+    // Dummy link
     // ======================================
-    function init_smooth_scroll() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                        - 50
-                    }, 2000);
-                    return false;
-                }
-            }
-        });
+    function init_dummy_link() {
+      // Disable default link behavior for dummy links that have href='#'
+      var $emptyLink = $('a[href=#]');
+      $emptyLink.on('click', function(e){
+        e.preventDefault();
+      });
     }
+
+
+    // ======================================
+    // Smooth Scroll to element
+    // ======================================
+  	var $scrollTo = $('.scroll-to');
+  	$scrollTo.on('click', function(event){
+  		var $elemOffsetTop = $(this).data('offset-top');
+  		$('html').velocity("scroll", { offset:$(this.hash).offset().top-$elemOffsetTop, duration: 1500, easing:'easeInOutCubic', mobileHA: false});
+  		event.preventDefault();
+  	});
+
 
     // ======================================
     // Smooth Scroll to Top button
@@ -41,6 +45,11 @@
                 $back_to_top.addClass('cd-fade-out');
             }
         });
+
+        $back_to_top.on('click', function(e){
+    			e.preventDefault();
+    			$('html').velocity("scroll", { offset: 0, duration: 1500, easing:'easeInOutCubic', mobileHA: false });
+    		});
     }
 
 
@@ -80,6 +89,38 @@
     }
 
 
+    function init_accordion_sidebar() {
+      $.fn.lvAccordion = function(){
+
+    		var $this = $(this),
+    		isToggle = $this.hasClass( 'm-toggle' ) ? true : false,
+    		items = $this.find( '> li' );
+    		items.filter( '.m-active' ).find( '.category-list' ).slideDown( 300 );
+
+    		$this.find( '.category-title' ).click(function(){
+    			if ( ! $(this).parent().hasClass( 'm-active' ) ) {
+    				if ( ! isToggle ) {
+    					items.filter( '.m-active' ).find( '.category-list' ).slideUp(300);
+    					items.filter( '.m-active' ).removeClass( 'm-active' );
+    				}
+    				$(this).parent().find( '.category-list' ).slideDown(300);
+    				$(this).parent().addClass( 'm-active' );
+    			}
+    			else {
+    				$(this).parent().find( '.category-list' ).slideUp(300);
+    				$(this).parent().removeClass( 'm-active' );
+    			}
+    		});
+
+    	};
+    	if ( $.fn.lvAccordion ) {
+    		$( '.categories' ).each(function(){
+    			$(this).lvAccordion();
+    		});
+    	}
+    }
+
+
     // ======================================
     // Google map - Manchester Art Gallery
     // ======================================
@@ -93,6 +134,7 @@
           var mapOptions = {
               // How zoomed in you want the map to start at (always required)
               zoom: 15,
+              scrollwheel: false,
 
               // The latitude and longitude to center the map (always required)
               center: new google.maps.LatLng(53.4786541, -2.2414114), // Manchester Art Gallery
@@ -118,10 +160,15 @@
       }
     }
 
-    init_smooth_scroll();
+    init_dummy_link();
     init_smooth_scroll_top();
     init_accordion();
+    init_accordion_sidebar();
     init_map_mac();
+
+    if(document.URL.indexOf("manchester-art-gallery.html") >= 0){
+      init_map_mac();
+    }
 
     var WSD = function() {
         this.VERSION = "1.1.0";

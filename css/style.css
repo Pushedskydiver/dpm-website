@@ -1109,6 +1109,7 @@ section.banner-section .flex-container {
   bottom: 5%;
   left: 0;
   right: 0;
+  width: 30px;
   color: #fff;
   font-size: 3rem;
   margin: 0 auto;
@@ -1144,14 +1145,146 @@ main.main-content article {
 }
 
 main.main-content aside {
-  background: #f0f0f0;
+  background: #fbfbfb;
   padding-top: 30px;
   padding-bottom: 60px;
 }
 
 main.main-content aside h3 {
+  color: #404040;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
+  margin: 0;
+}
+
+main.main-content aside h3 i {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 1.3em;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+main.main-content aside .widget-title {
+  padding: 0 15px 16px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+main.main-content aside h3 i span {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 7px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin-top: -5px;
+}
+
+main.main-content aside h3 i span::before,
+main.main-content aside h3 i span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 12px;
+  height: 1px;
+  background: #999
+}
+
+main.main-content aside h3 i span::before {
+  top: 2px;
+}
+
+main.main-content aside h3 i span::after {
+  top: 8px;
+}
+
+main.main-content aside > ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+main.main-content aside ul li {
+  border-top: 1px solid #e9e9e9;
+}
+
+main.main-content aside ul li:first-child {
+  border-top: none;
+}
+
+main.main-content aside li a {
+  position: relative;
+  display: block;
+  color: #3d4652;
+  padding: 11px 30px 11px 0;
+}
+
+main.main-content aside li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #38c9ff;
+
+  -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+main.main-content aside li a i {
+  position: absolute;
+  right: 0;
+  background: #e9e9e9;
+  padding: 2px 6px;
+  line-height: 1.3;
+  border-radius: 10px;
+
+  -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+main.main-content aside li.active a,
+main.main-content aside li a:hover {
+  color: #38c9ff;
+}
+
+main.main-content aside li.active a i,
+main.main-content aside li a:hover i {
+  background: #38c9ff;
+  color: #fff;
+}
+
+main.main-content aside li a:hover::after {
+  width: 100%;
+}
+
+.categories li.m-active > a {
+  color: #ff3366;
+}
+
+.categories li.m-active > a i {
+  background: #ff3366;
+  color: #fff;
+}
+
+.category-list {
+  display: none;
+}
+
+.category-list ul {
+  padding-left: 10px;
+}
+
+.category-list li a {
+  font-size: 0.8rem;
+  padding: 8px 10px 8px 0 !important;
 }
 
 .article-img p {
@@ -1169,9 +1302,160 @@ main.main-content aside h3 {
 
 
 
+/*------------------------------------*\
+    #7 REVIEW-BOX-STYLES
+\*------------------------------------*/
+
+.review-box {
+  background: #fbfbfb;
+  color: #404040;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+
+  -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.review-box h3 {
+  position: relative;
+  font-weight: 500;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.review-box h3 span {
+  display: block;
+  color: #c0c0c0;
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+
+.review-box h3 i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #c0c0c0;
+  line-height: 1.3;
+}
+
+.review-box .rating i {
+  color: #ff3366;
+}
+
+.review-title {
+  margin-bottom: 15px;
+}
+
+.review-title h2 {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.review-title a {
+  display: inline-block;
+  background: #38c9ff;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.review-title a:hover {
+  background: #ff3366;
+}
+
+
+
+
 
 /*------------------------------------*\
-    #7 JUMPS-SECTION-STYLES
+    #8 LOCATION-DETAILS-STYLES
+\*------------------------------------*/
+
+section.location-details {
+  position: relative;
+  background: url('../images/manchester-art-gallery.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 14;
+}
+
+section.location-details::before {
+  content: '';
+  display: block !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 201, 255, 0.7);
+  z-index: -1;
+}
+
+.detail-body {
+  background: #ffffff;
+  margin-bottom: 30px;
+
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item {
+  padding: 22px;
+}
+
+.detail-item i {
+  display: block;
+  color: #404040;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.detail-item h4 {
+  color: #404040;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.detail-item h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #404040;
+  margin: 12px auto
+}
+
+.detail-item p {
+  color: #808080;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.detail-item p a {
+  color: #38c9ff;
+}
+
+.detail-item p a:hover {
+  color: #ff3366;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #9 JUMPS-SECTION-STYLES
 \*------------------------------------*/
 
 section.jumps-section {
@@ -1277,7 +1561,7 @@ section.jumps-section {
 
 
 /*------------------------------------*\
-    #8 ACCORDION-SECTION-STYLES
+    #10 ACCORDION-SECTION-STYLES
 \*------------------------------------*/
 
 .accordion-jumps {
@@ -1439,7 +1723,7 @@ section.jumps-section {
 
 
 /*------------------------------------*\
-    #9 CATEGORY-SECTION-STYLES
+    #11 CATEGORY-SECTION-STYLES
 \*------------------------------------*/
 
 .category {
@@ -1507,7 +1791,7 @@ section.jumps-section {
 
 
 /*------------------------------------*\
-    #10 FOOTER-STYLES
+    #12 FOOTER-STYLES
 \*------------------------------------*/
 
 footer h3 {
@@ -1553,6 +1837,10 @@ footer h3 {
   font-size: 0.9rem;
 }
 
+.top-footer li a:hover {
+  color: #ff3366;
+}
+
 .bottom-footer  {
   background: #ededed;
   padding: 15px 0;
@@ -1572,17 +1860,8 @@ footer h3 {
   color: #333;
 }
 
-
-
-
-
-/*------------------------------------*\
-    #11 GOOGLE-MAP-STYLES
-\*------------------------------------*/
-
-#map-mac {
-  width: 100%;
-  height: 300px;
+.bottom-footer li a:hover {
+  color: #ff3366;
 }
 
 
@@ -1590,7 +1869,21 @@ footer h3 {
 
 
 /*------------------------------------*\
-    #12 BACK-TO-TOP-STYLES
+    #13 GOOGLE-MAP-STYLES
+\*------------------------------------*/
+
+#map-mac {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #14 BACK-TO-TOP-STYLES
 \*------------------------------------*/
 
 .cd-top {
@@ -1641,7 +1934,7 @@ footer h3 {
 
 
 /*------------------------------------*\
-    #13 MEDIA-QUERIES
+    #15 MEDIA-QUERIES
 \*------------------------------------*/
 
 /* Large Screen Phones */
@@ -1689,7 +1982,7 @@ footer h3 {
   }
 
   .article-img img,
-  aside.aside-contet img {
+  aside.aside-content img {
     width: 100%;
   }
 
@@ -1824,6 +2117,46 @@ footer h3 {
 
   #map-mac {
     height: 400px;
+  }
+
+  .review-title h2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  section.location-details .col::before {
+    display: none;
+  }
+
+  section.location-details .flex-container {
+    -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+          justify-content: space-between;
+  }
+
+  section.location-details::before {
+    display: none;
+  }
+
+  .detail-body {
+    width: 32%;
+    margin: 0;
+  }
+
+  .detail-item {
+    padding-bottom: 25px;
+  }
+
+  .category-list li a {
+    font-size: 0.9rem;
   }
 }
 
@@ -2054,6 +2387,18 @@ footer h3 {
     font-weight: 500;
   }
 
+  .detail-item {
+    padding-bottom: 22px;
+  }
+
+  .detail-item i {
+    font-size: 3rem;
+  }
+
+  .detail-item h4 {
+    font-size: 1.4rem;
+  }
+
   .jump-flex-item {
     width: 24.9%;
     margin-bottom: 0;
@@ -2116,5 +2461,9 @@ footer h3 {
 
   main.main-content aside {
     width: 30%;
+  }
+
+  .detail-item p, .detail-item a {
+    font-size: 1rem;
   }
 }
