@@ -124,7 +124,7 @@
     // ======================================
     // Google map - Manchester Art Gallery
     // ======================================
-    function init_map_mac() {
+    function init_map_mag() {
       // When the window has finished loading create our google map below
       google.maps.event.addDomListener(window, 'load', init);
 
@@ -146,7 +146,7 @@
 
           // Get the HTML DOM element that will contain your map
           // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-mac');
+          var mapElement = document.getElementById('map-mag');
 
           // Create the Google Map using our element and options defined above
           var map = new google.maps.Map(mapElement, mapOptions);
@@ -160,14 +160,57 @@
       }
     }
 
+
+    // ======================================
+    // Google map - Gorilla Bar
+    // ======================================
+    function init_map_gorilla() {
+      // When the window has finished loading create our google map below
+      google.maps.event.addDomListener(window, 'load', init);
+
+      function init() {
+          // Basic options for a simple Google Map
+          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+          var mapOptions = {
+              // How zoomed in you want the map to start at (always required)
+              zoom: 15,
+              scrollwheel: false,
+
+              // The latitude and longitude to center the map (always required)
+              center: new google.maps.LatLng(53.474155, -2.2425783), // Gorilla Bar
+
+              // How you would like to style the map.
+              // This is where you would paste any style found on Snazzy Maps.
+              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+          };
+
+          // Get the HTML DOM element that will contain your map
+          // We are using a div with id="map" seen below in the <body>
+          var mapElement = document.getElementById('map-gorilla');
+
+          // Create the Google Map using our element and options defined above
+          var map = new google.maps.Map(mapElement, mapOptions);
+
+          // Let's also add a marker while we're at it
+          var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(53.474155, -2.2425783),
+              map: map,
+              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+          });
+      }
+    }
+
     init_dummy_link();
     init_smooth_scroll_top();
     init_accordion();
     init_accordion_sidebar();
-    init_map_mac();
 
-    if(document.URL.indexOf("manchester-art-gallery.html") >= 0){
-      init_map_mac();
+    if(document.URL.indexOf("manchester-art-gallery.php") >= 0){
+      init_map_mag();
+    }
+
+    if(document.URL.indexOf("gorilla-bar.php") >= 0){
+      init_map_gorilla();
     }
 
     var WSD = function() {

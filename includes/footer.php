@@ -88,6 +88,6 @@
 <script src="/dpm-website/js/velocity.min.js"></script>
 <script src="/dpm-website/js/jquery.lazyload.min.js"></script>
 <script src="/dpm-website/js/swiper.jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="/dpm-website/js/script.js"></script>
 <script>new WOW().init();</script>

@@ -12,7 +12,7 @@
           <div class="header-inner">
             <!-- BEGIN : LOGO -->
             <div class="logo">
-              <a href="#"><img src="/dpm-website/images/logo.png" width="50" alt=""> Manchester</a>
+              <a href="/dpm-website/index.php"><img src="/dpm-website/images/logo.png" width="50" alt=""> Manchester</a>
             </div>
             <!-- END : LOGO -->
           </div>
@@ -42,9 +42,9 @@
           <div class="header-inner">
             <!-- BEGIN : MAIN MENU -->
             <ul class="menu">
-              <li <?php if($current == 'home') {echo 'class="active"';} ?> class="home"><a href="#">Home</a></li>
+              <li <?php if($current == 'home') {echo 'class="active home"';} ?> ><a href="/dpm-website/index.php">Home</a></li>
 
-              <li <?php if($current == 'food') {echo 'class="active"';} ?> class="classic"><a href="#">Food <i class="pg-arrow_minimize m-l-5"></i></a>
+              <li <?php if($current == 'food') {echo 'class="classic active food"';} ?> class="classic"><a href="#">Food <i class="pg-arrow_minimize m-l-5"></i></a>
                 <!-- BEGIN : SUB MENU -->
                 <nav class="classic">
                   <span class="arrow"></span>
@@ -57,7 +57,7 @@
                 <!-- END : SUB MENU -->
               </li>
 
-              <li <?php if($current == 'transport') {echo 'class="active"';} ?> class="classic"><a href="#">Transport <i class="pg-arrow_minimize m-l-5"></i></a>
+              <li <?php if($current == 'transport') {echo 'class="classic active transport"';} ?> class="classic"><a href="#">Transport <i class="pg-arrow_minimize m-l-5"></i></a>
                 <!-- BEGIN : SUB MENU -->
                 <nav class="classic">
                   <span class="arrow"></span>
@@ -70,7 +70,7 @@
                 <!-- END : SUB MENU -->
               </li>
 
-              <li <?php if($current == 'shopping') {echo 'class="active"';} ?> class="classic"><a href="#">Shopping <i class="pg-arrow_minimize m-l-5"></i></a>
+              <li <?php if($current == 'shopping') {echo 'class="classic active shopping"';} ?> class="classic"><a href="#">Shopping <i class="pg-arrow_minimize m-l-5"></i></a>
                 <!-- BEGIN : SUB MENU -->
                 <nav class="classic">
                   <span class="arrow"></span>
@@ -83,12 +83,12 @@
                 <!-- END : SUB MENU -->
               </li>
 
-              <li <?php if($current == 'museum') {echo 'class="active"';} ?> class="classic"><a href="#">Museums &amp; Galleries <i class="pg-arrow_minimize m-l-5"></i></a>
+              <li <?php if($current == 'museum') {echo 'class="classic active museums"';} ?> class="classic"><a href="#">Museums &amp; Galleries <i class="pg-arrow_minimize m-l-5"></i></a>
                 <!-- BEGIN : SUB MENU -->
                 <nav class="classic">
                   <span class="arrow"></span>
                   <ul>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/museums/manchester-art-gallery.php">Manchester Art Gallery</a></li>
                     <li><a href="#">Lorem Ipsum</a></li>
                     <li><a href="#">Lorem Ipsum</a></li>
                   </ul>
@@ -96,12 +96,12 @@
                 <!-- END : SUB MENU -->
               </li>
 
-              <li <?php if($current == 'nightlife') {echo 'class="active"';} ?> class="classic"><a href="javascript:;">Nightlife <i class="pg-arrow_minimize m-l-5"></i></a>
+              <li <?php if($current == 'nightlife') {echo 'class="classic active nightlife"';} ?> class="classic"><a href="#">Nightlife <i class="pg-arrow_minimize m-l-5"></i></a>
                 <!-- BEGIN : SUB MENU -->
                 <nav class="classic">
                   <span class="arrow"></span>
                   <ul>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/nightlife/gorilla-bar.php">Gorilla Bar</a></li>
                     <li><a href="#">Lorem Ipsum</a></li>
                     <li><a href="#">Lorem Ipsum</a></li>
                   </ul>
