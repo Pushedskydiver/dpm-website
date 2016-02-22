@@ -1161,7 +1161,6 @@ main.main-content aside h3 i {
   position: relative;
   display: inline-block;
   color: #999;
-  font-size: 1.3em;
   margin-right: 4px;
   vertical-align: middle;
 }
@@ -1206,7 +1205,7 @@ main.main-content aside h3 i span::after {
 main.main-content aside > ul {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 main.main-content aside ul li {
@@ -1250,17 +1249,6 @@ main.main-content aside li a i {
     transition: all .3s ease-in-out;
 }
 
-main.main-content aside li.active a,
-main.main-content aside li a:hover {
-  color: #38c9ff;
-}
-
-main.main-content aside li.active a i,
-main.main-content aside li a:hover i {
-  background: #38c9ff;
-  color: #fff;
-}
-
 main.main-content aside li a:hover::after {
   width: 100%;
 }
@@ -1296,6 +1284,33 @@ main.main-content aside li a:hover::after {
   text-align: center;
   margin: 0;
   padding: 6px 4px;
+}
+
+.related-pages {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.related-pages:last-child {
+  margin-bottom: 0;
+}
+
+.related-pages h4 {
+  font-weight: 500;
+  padding: 6px 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.related-pages a {
+  display: inline-block;
+  background: #ff3366;
+  color: #fff;
+  text-align: center;
+  padding: 6px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 
@@ -1990,6 +2005,10 @@ footer h3 {
     font-size: 0.85rem;
   }
 
+  .related-pages h4 {
+    font-size: 1.1rem;
+  }
+
   .top-footer ul {
     display: inline-block;
     width: 50%;
@@ -2385,6 +2404,47 @@ footer h3 {
 
   main.main-content aside h3 {
     font-weight: 500;
+  }
+
+  main.main-content aside li a:hover {
+    color: #38c9ff;
+  }
+
+  main.main-content aside li a:hover i {
+    background: #38c9ff;
+    color: #fff;
+  }
+
+  .related-pages {
+    position: relative;
+  }
+
+  .related-pages::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ff3366;
+
+    -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+  }
+
+  .related-pages:hover::after {
+    width: 100%;
+  }
+
+  .related-pages a {
+    background: transparent;
+    color: #ff3366;
+    border: 1px solid #ff3366;
+  }
+
+  .related-pages a:hover {
+    background: #ff3366;
+    color: #fff;
   }
 
   .detail-item {
