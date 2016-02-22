@@ -431,7 +431,11 @@ body.mobile header .menu > li.home.active {
 }
 
 body.mobile header .menu > li.museums.active {
-  background: #ffd600;
+  background: #ffde00;
+}
+
+body.mobile header .menu > li.nightlife.active {
+  background: #bd00ff;
 }
 
 header .menu > li.active a {
@@ -1060,7 +1064,6 @@ section.home-slider .slider-content {
 section.banner-section {
   position: relative;
   height: 100vh;
-  background: url('../images/banners/manchester-art-gallery.jpg') no-repeat;
   background-size: cover;
   color: #fff;
   z-index: 9;
@@ -1085,6 +1088,27 @@ section.banner-section p {
   margin-top: 0;
 }
 
+section.banner-section .breadcrumbs a:first-child:before,
+section.banner-section .breadcrumbs span:first-child:before {
+  display: none;
+}
+
+section.banner-section  .breadcrumbs a:before,
+section.banner-section  .breadcrumbs span:before {
+  content: "/";
+  margin: 0 5px;
+}
+
+section.banner-section  .breadcrumbs a {
+  color: #38c9ff;
+  font-weight: 600;
+}
+
+section.banner-section  .breadcrumbs span {
+  color: #fafafa;
+  font-weight: 600;
+}
+
 section.banner-section i {
   color: #38c9ff;
   font-size: 1.3rem;
@@ -1102,6 +1126,14 @@ section.banner-section .flex-container {
     -webkit-justify-content: center;
       -ms-flex-pack: center;
         justify-content: center;
+}
+
+.mag-banner {
+  background: url('../images/banners/manchester-art-gallery.jpg') no-repeat;
+}
+
+.gorilla-banner {
+  background: url('../images/banners/gorilla-manchester.jpg') no-repeat;
 }
 
 .down-arrow a {
@@ -1161,7 +1193,6 @@ main.main-content aside h3 i {
   position: relative;
   display: inline-block;
   color: #999;
-  font-size: 1.3em;
   margin-right: 4px;
   vertical-align: middle;
 }
@@ -1206,7 +1237,7 @@ main.main-content aside h3 i span::after {
 main.main-content aside > ul {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 main.main-content aside ul li {
@@ -1250,17 +1281,6 @@ main.main-content aside li a i {
     transition: all .3s ease-in-out;
 }
 
-main.main-content aside li.active a,
-main.main-content aside li a:hover {
-  color: #38c9ff;
-}
-
-main.main-content aside li.active a i,
-main.main-content aside li a:hover i {
-  background: #38c9ff;
-  color: #fff;
-}
-
 main.main-content aside li a:hover::after {
   width: 100%;
 }
@@ -1296,6 +1316,33 @@ main.main-content aside li a:hover::after {
   text-align: center;
   margin: 0;
   padding: 6px 4px;
+}
+
+.related-pages {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.related-pages:last-child {
+  margin-bottom: 0;
+}
+
+.related-pages h4 {
+  font-weight: 500;
+  padding: 6px 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.related-pages a {
+  display: inline-block;
+  background: #ff3366;
+  color: #fff;
+  text-align: center;
+  padding: 6px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 
@@ -1344,6 +1391,10 @@ main.main-content aside li a:hover::after {
   color: #ff3366;
 }
 
+.review-box .rating i.star-gray {
+  color: #c0c0c0;
+}
+
 .review-title {
   margin-bottom: 15px;
 }
@@ -1355,18 +1406,6 @@ main.main-content aside li a:hover::after {
   margin: 0;
   margin-right: 5px;
   margin-bottom: 5px;
-}
-
-.review-title a {
-  display: inline-block;
-  background: #38c9ff;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 4px;
-}
-
-.review-title a:hover {
-  background: #ff3366;
 }
 
 
@@ -1748,7 +1787,7 @@ section.jumps-section {
 
 .category-title h2 {
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .category-item {
@@ -1872,7 +1911,7 @@ footer h3 {
     #13 GOOGLE-MAP-STYLES
 \*------------------------------------*/
 
-#map-mac {
+.map {
   width: 100%;
   height: 300px;
   margin-bottom: 50px;
@@ -1973,6 +2012,11 @@ footer h3 {
     font-size: 1.1rem;
   }
 
+  section.banner-section .breadcrumbs a,
+  section.banner-section .breadcrumbs span {
+    font-size: 0.9rem;
+  }
+
   section.banner-section i {
     font-size: 1.5rem;
   }
@@ -1988,6 +2032,10 @@ footer h3 {
 
   .article-img p {
     font-size: 0.85rem;
+  }
+
+  .related-pages h4 {
+    font-size: 1.1rem;
   }
 
   .top-footer ul {
@@ -2033,11 +2081,12 @@ footer h3 {
 
   section.banner-section h1 {
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: 400;
   }
 
-  section.banner-section p {
-    font-size: 1.3rem;
+  section.banner-section .breadcrumbs a,
+  section.banner-section .breadcrumbs span {
+    font-size: 1rem;
   }
 
   section.banner-section i {
@@ -2075,18 +2124,6 @@ footer h3 {
     font-weight: 600;
   }
 
-  .accordion-header h3 {
-    font-size: 1.7rem;
-  }
-
-  .jump-panel .panel-title h3 {
-    font-size: 1.5rem;
-  }
-
-  .jump-panel .panel-title p {
-    font-size: 1.1rem;
-  }
-
   .category-title h2 {
     font-size: 2.5rem;
   }
@@ -2115,12 +2152,11 @@ footer h3 {
     font-size: 1.7rem;
   }
 
-  #map-mac {
+  .map {
     height: 400px;
   }
 
   .review-title h2 {
-    display: inline-block;
     font-size: 1.5rem;
     margin-bottom: 0;
   }
@@ -2166,10 +2202,47 @@ footer h3 {
     width: 970px;
   }
 
+  header .header-inner,
+  header .dark .logo {
+    line-height: 0;
+  }
+
+  header .dark .logo img {
+    height: 55px;
+    vertical-align: top;
+  }
+
   header .logo-container {
     display: inline-block;
     width: 29%;
     float: none;
+  }
+
+  header .menu > li.active {
+    position: relative;
+  }
+
+  header .menu > li.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+  }
+
+  header .menu > li.active.home::after {
+    background: #dd0000;
+  }
+
+  header .menu > li.active.museums::after {
+    background: #ffde00;
+  }
+
+  header .menu > li.active.nightlife::after {
+    background: #bd00ff;
   }
 
   .menu-content {
@@ -2191,9 +2264,9 @@ footer h3 {
     color: #fff;
     font-size: 1rem;
     line-height: 60px;
+    text-align: center;
     opacity: 0.5 !important;
-    padding: 0;
-    padding-right: 21px;
+    padding: 0 10px;
   }
 
   .header .dark .menu > li > a {
@@ -2317,14 +2390,6 @@ footer h3 {
     padding: 8px 12px;
   }
 
-  .header .transparent-dark .menu > li > a {
-    padding-right: 17px;
-  }
-
-  .header .transparent-dark .menu > li:last-child > a {
-    padding-right: 0;
-  }
-
   header .mobile-copyright,
   header .mobile-social {
     display: none;
@@ -2332,6 +2397,7 @@ footer h3 {
 
   section.banner-section {
     height: 600px;
+    background-attachment: fixed;
   }
 
   section.banner-section .flex-container {
@@ -2340,14 +2406,6 @@ footer h3 {
 
   section.banner-section h1 {
     font-size: 3rem;
-  }
-
-  section.banner-section p {
-    font-size: 1.6rem;
-  }
-
-  section.banner-section i {
-    font-size: 2.7rem;
   }
 
   main.main-content .flex-container {
@@ -2385,6 +2443,47 @@ footer h3 {
 
   main.main-content aside h3 {
     font-weight: 500;
+  }
+
+  main.main-content aside li a:hover {
+    color: #38c9ff;
+  }
+
+  main.main-content aside li a:hover i {
+    background: #38c9ff;
+    color: #fff;
+  }
+
+  .related-pages {
+    position: relative;
+  }
+
+  .related-pages::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ff3366;
+
+    -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+  }
+
+  .related-pages:hover::after {
+    width: 100%;
+  }
+
+  .related-pages a {
+    background: transparent;
+    color: #ff3366;
+    border: 1px solid #ff3366;
+  }
+
+  .related-pages a:hover {
+    background: #ff3366;
+    color: #fff;
   }
 
   .detail-item {
