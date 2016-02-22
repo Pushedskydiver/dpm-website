@@ -8,9 +8,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<<<<<<< HEAD
   <!-- META TAGS  -->
   <?php $meta_description = '';?>
   <?php $meta_keywords = 'Manchester Metropolitan University, student, Manchester, Man Met, MMU, Info Comms, Department of Journalism, Informantion and Communications, Web Development, Web Dev, Information and Communications, Info Comms, Digital Media and Communications, Multimedia Journalusm, Course Info, current student';?>
+=======
+  <!-- PAGE TITLE -->
+  <?php $page_title = 'Manchester Art Gallery | Museums | International Student Guide On Manchester | Manchester Metropolitan University';?>
+
+  <!-- META TAGS  -->
+  <meta name="description" content="">
+  <meta name="keywords" content="Manchester Metropolitan University, student, Manchester, Man Met, MMU, Info Comms, Department of Journalism, Informantion and Communications, Web Development, Web Dev, Information and Communications, Info Comms, Digital Media and Communications, Multimedia Journalusm, Course Info, current student">
+>>>>>>> dd11a5cd3f5f610a80f44d08252898702d0cdba2
 
   <!--========================================== - HEAD - ==========================================-->
   <?php include_once($path."head.php"); ?>
