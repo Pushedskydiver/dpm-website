@@ -143,8 +143,8 @@
               <a href="#"><div class="jump-overlay"></div><img src="images/jumps/jump-1.jpg" alt="" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
-                <h3 class="jump-title"><a href="#">Lorem Ipsum</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="jump-title"><a href="#">Bar Burrito</a></h3>
+                <p>Mexican restaurant known for their Mexican wrap as they have a whole range of flavours such as meat filling or vegetarian filling.</p>
               </div>
               <!-- END : JUMP CONTENT -->
             </div>
@@ -154,8 +154,8 @@
               <a href="#"><div class="jump-overlay"></div><img src="images/jumps/jump-1.jpg" alt="" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
-                <h3 class="jump-title"><a href="#">Lorem Ipsum</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="jump-title"><a href="#">Wagamama</a></h3>
+                <p>Chinese restaurant with their most popular dish known as the prawn firecracker. The seating is excellent with an atmosphere that makes people feel like they are seated abroad.</p>
               </div>
               <!-- END : JUMP CONTENT -->
             </div>
@@ -165,8 +165,8 @@
               <a href="#"><div class="jump-overlay"></div><img src="images/jumps/jump-1.jpg" alt="" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
-                <h3 class="jump-title"><a href="#">Lorem Ipsum</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="jump-title"><a href="#">Archie's</a></h3>
+                <p>American fast food takeaway and diner. They have a variety of different fast foods, milkshakes and desserts. The service is fast and it is popular around students from universities.</p>
               </div>
               <!-- END : JUMP CONTENT -->
             </div>
@@ -176,8 +176,8 @@
               <a href="#"><div class="jump-overlay"></div><img src="images/jumps/jump-1.jpg" alt="" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
-                <h3 class="jump-title"><a href="#">Lorem Ipsum</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3 class="jump-title"><a href="#">Bella Italia</a></h3>
+                <p>Italian restaurant that serves a variety of cuisines not just pasta or pizza. It also serves vegetarian dishes.</p>
               </div>
               <!-- END : JUMP CONTENT -->
             </div>
@@ -269,8 +269,8 @@
           <div class="accordion-container">
             <!-- BEGIN : ACCORDION HEADER -->
             <div class="accordion-header">
-              <h3>Lorem Ipsum</h3>
-              <p>With endless hiking trails, these destinations will satisfy the wildest explorers!</p>
+              <h3>Transport</h3>
+              <p>Different ways of travelling around Manchetser.</p>
             </div>
             <!-- END : ACCORDION HEADER -->
             <!-- BEGIN : JUMP PANEL -->
@@ -285,7 +285,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Bus</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -301,7 +301,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Taxi</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -317,7 +317,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Tram</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -336,7 +336,7 @@
           <div class="accordion-container">
             <!-- BEGIN : ACCORDION HEADER -->
             <div class="accordion-header">
-              <h3>Lorem Ipsum</h3>
+              <h3>Museums &amp; Galleries</h3>
               <p>With endless hiking trails, these destinations will satisfy the wildest explorers!</p>
             </div>
             <!-- END : ACCORDION HEADER -->
@@ -352,7 +352,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Manchester Art Gallery</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -368,7 +368,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Museum of Science &amp; Industry</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -384,7 +384,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Museum of Transport</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -403,7 +403,7 @@
           <div class="accordion-container">
             <!-- BEGIN : ACCORDION HEADER -->
             <div class="accordion-header">
-              <h3>Lorem Ipsum</h3>
+              <h3>Nightlife</h3>
               <p>With endless hiking trails, these destinations will satisfy the wildest explorers!</p>
             </div>
             <!-- END : ACCORDION HEADER -->
@@ -419,7 +419,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Gorilla Bar</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -435,7 +435,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Sankeys</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->
@@ -451,7 +451,7 @@
                 <!-- END : PANEL CONTENT -->
                 <!-- BEGIN : PANEL TITLE -->
                 <div class="panel-title">
-                  <h3>Cervical spondylosis</h3>
+                  <h3>Cloud23</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
                 <!-- END : PANEL TITLE -->

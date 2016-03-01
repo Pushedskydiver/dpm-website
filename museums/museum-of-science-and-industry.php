@@ -2,7 +2,7 @@
    $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "/dpm-website/includes/";
    $current = 'museum';
-   $page = 'mag';
+   $page = 'mosi';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
   <?php $meta_keywords = 'Manchester Metropolitan University, student, Manchester, Man Met, MMU, Info Comms, Department of Journalism, Informantion and Communications, Web Development, Web Dev, Information and Communications, Info Comms, Digital Media and Communications, Multimedia Journalusm, Course Info, current student';?>
 
   <!-- PAGE TITLE -->
-  <?php $page_title = 'Manchester Art Gallery | Museums | International Student Guide On Manchester | Manchester Metropolitan University';?>
+  <?php $page_title = 'Museum of Science and Industry | Museums | International Student Guide On Manchester | Manchester Metropolitan University';?>
 
   <!-- META TAGS  -->
   <meta name="description" content="">
@@ -30,19 +30,19 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'mag') {echo 'class="banner-section mag-banner"';} ?> >
+  <section <?php if($page == 'mosi') {echo 'class="banner-section mag-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
       <div class="row">
         <!-- BEGIN : FLEX CONTAINER -->
         <div class="flex-container col">
-          <h1>Manchester Art Gallery</h1>
+          <h1>Museum of Science and Industry</h1>
           <p><i class="fa fa-map-marker"></i> Mosley Street, Manchester M2 3JL</p>
           <div class="breadcrumbs">
             <a href="/dpm-website/index.php">Home</a>
-            <a href="#">Museums</a>
-            <span>Manchester Art Gallery</span>
+            <span>Museums</span>
+            <span>Museum of Science and Industry</span>
           </div>
         </div>
         <!-- END : FLEX CONTAINER -->

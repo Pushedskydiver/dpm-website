@@ -49,9 +49,10 @@
                 <nav class="classic">
                   <span class="arrow"></span>
                   <ul>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/food/mexican.php">Mexican</a></li>
+                    <li><a href="/dpm-website/food/chinese.php">Chinese</a></li>
+                    <li><a href="/dpm-website/food/american.php">American</a></li>
+                    <li><a href="/dpm-website/food/italian.php">Italian</a></li>
                   </ul>
                 </nav>
                 <!-- END : SUB MENU -->
@@ -62,9 +63,9 @@
                 <nav class="classic">
                   <span class="arrow"></span>
                   <ul>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/transport/bus.php">Bus</a></li>
+                    <li><a href="/dpm-website/transport/taxi.php">Taxi</a></li>
+                    <li><a href="/dpm-website/transport/tram.php">Tram</a></li>
                   </ul>
                 </nav>
                 <!-- END : SUB MENU -->
@@ -75,9 +76,8 @@
                 <nav class="classic">
                   <span class="arrow"></span>
                   <ul>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/shopping/arndale.php">Arndale</a></li>
+                    <li><a href="/dpm-website/shopping/intu-trafford-centre.php">Intu Trafford Centre</a></li>
                   </ul>
                 </nav>
                 <!-- END : SUB MENU -->
@@ -89,8 +89,8 @@
                   <span class="arrow"></span>
                   <ul>
                     <li><a href="/dpm-website/museums/manchester-art-gallery.php">Manchester Art Gallery</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/museums/museum-of-science-and-industry.php">Museum Of Science &amp; Industry</a></li>
+                    <li><a href="/dpm-website/museums/museum-of-transport.php">Museum Of Transport</a></li>
                   </ul>
                 </nav>
                 <!-- END : SUB MENU -->
@@ -102,8 +102,8 @@
                   <span class="arrow"></span>
                   <ul>
                     <li><a href="/dpm-website/nightlife/gorilla-bar.php">Gorilla Bar</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
-                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="/dpm-website/nightlife/sankeys.php">Sankeys</a></li>
+                    <li><a href="/dpm-website/nightlife/cloud23.php">Cloud23</a></li>
                   </ul>
                 </nav>
                 <!-- END : SUB MENU -->
