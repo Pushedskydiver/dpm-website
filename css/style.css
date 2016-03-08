@@ -430,6 +430,18 @@ body.mobile header .menu > li.home.active {
   background: #dd0000;
 }
 
+body.mobile header .menu > li.food.active {
+  background: #0079dd;
+}
+
+body.mobile header .menu > li.transport.active {
+  background: #00ff38;
+}
+
+body.mobile header .menu >li.shopping.active {
+  background: #ff00b8;
+}
+
 body.mobile header .menu > li.museums.active {
   background: #ffde00;
 }
@@ -440,6 +452,11 @@ body.mobile header .menu > li.nightlife.active {
 
 header .menu > li.active a {
   color: #fff;
+}
+
+body.mobile header .menu > li.museums.active a,
+body.mobile header .menu > li.transport.active a {
+  color: #404040;
 }
 
 header .menu > li > a {
@@ -1134,6 +1151,18 @@ section.banner-section .flex-container {
 
 .gorilla-banner {
   background: url('../images/banners/gorilla-manchester.jpg') no-repeat;
+}
+
+.bus-banner {
+  background: url('../images/banners/bus-banner.jpg') no-repeat;
+}
+
+.taxi-banner {
+  background: url('../images/banners/taxi-banner.jpg') no-repeat;
+}
+
+.tram-banner {
+  background: url('../images/banners/tram-banner.jpg') no-repeat;
 }
 
 .down-arrow a {
@@ -2041,6 +2070,7 @@ footer h3 {
   .top-footer ul {
     display: inline-block;
     width: 50%;
+    vertical-align: top;
   }
 }
 
@@ -2194,6 +2224,18 @@ footer h3 {
   .category-list li a {
     font-size: 0.9rem;
   }
+
+  .top-footer ul {
+    width: 31%;
+  }
+
+  .top-footer ul:nth-of-type(2) {
+    width: 46%;
+  }
+
+  .top-footer ul:nth-of-type(3) {
+    width: 23%;
+  }
 }
 
 /* Medium Screen Tablets */
@@ -2235,6 +2277,18 @@ footer h3 {
 
   header .menu > li.active.home::after {
     background: #dd0000;
+  }
+
+  header .menu > li.active.food::after {
+    background: #0079dd;
+  }
+
+  header .menu > li.active.transport::after {
+    background: #00ff38;
+  }
+
+  header .menu > li.active.shopping::after {
+    background: #ff00b8;
   }
 
   header .menu > li.active.museums::after {

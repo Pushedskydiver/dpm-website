@@ -22,18 +22,27 @@
           <!-- END : FOOTER ITEM -->
           <!-- BEGIN : FOOTER ITEM -->
           <div class="footer-item">
-            <h3>Lorem Ipsum</h3>
+            <h3>Quick Links</h3>
             <ul class="quick-links">
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Mexican Food</a></li>
+              <li><a href="#">Chinese Food</a></li>
+              <li><a href="#">American Food</a></li>
+              <li><a href="#">Italian Food</a></li>
+              <li><a href="#">Bus Travel</a></li>
+              <li><a href="#">Taxi Travel</a></li>
+              <li><a href="#">Tram Travel</a></li>
             </ul
             ><ul class="quick-links">
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Arndale Shopping Centre</a></li>
+              <li><a href="#">Intu Trafford Centre</a></li>
+              <li><a href="#">Manchester Art Gallery</a></li>
+              <li><a href="#">Museum of Science &amp; Industry</a></li>
+              <li><a href="#">Museum of Transport</a></li>
+            </ul
+            ><ul class="quick-links">
+              <li><a href="#">Gorilla Bar</a></li>
+              <li><a href="#">Sankeys</a></li>
+              <li><a href="#">Cloud23</a></li>
             </ul>
           </div>
           <!-- END : FOOTER ITEM -->
