@@ -30,7 +30,7 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'intu') {echo 'class="banner-section tram-banner"';} ?> >
+  <section <?php if($page == 'intu') {echo 'class="banner-section intu-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -69,23 +69,33 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>Intu Trafford Centre is a 3-storey mall for fashion and homeware shops, department store, restaurants and multi-screen cinema.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/intu-trafford-centre.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
+              <p>Intu Trafford Centre</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>Just outside of Manchester city centre is Trafford park, home to <b>Intu Trafford Centre</b>. In the Trafford centre there are even more stores and with a charming interior and exterior it is a great shopping experience. All the high street and clothing stores are featured in the Trafford centre, Topshop/Topman, River Island, New Look, all those featured in the Arndale, alongside some not featured such as Tessuti and Gap. Alongside these, there are a few department stores like John Lewis, Debenhams, and the second Selfridges in Manchester. Here you can buy perfumes, clothes, and technology; in other words, all your needs in one convenient store.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>You can also use <a href="https://www.myunidays.com" title="External link to UNIdays webiste">UNIdays</a>, a discount website and app, to get student discounts in the majority of these shops. You can download the app from the iOS and Google Play store for free below.</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
+            <div class="flex-container app-badges-container">
+              <div class="app-store-badge">
+                <a href="https://itunes.apple.com/gb/app/unidays/id599608562?mt=8&amp;uo=4" title="External link to UNIdays app on iOS app store."><img src="/dpm-website/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
+              </div>
 
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
+              <div class="app-store-badge">
+                <a href="https://play.google.com/store/apps/details?id=com.myunidays" title="External link to UNIdays app on Google Play app store."><img src="/dpm-website/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
+              </div>
+            </div>
 
-            <div id="map-mag" class="map"></div>
+            <p>When you are finished shopping, there's a large food court with a large variety of places to eat, from Las Iguanas to Nandos. If entertainment is what you're looking for, there are the arcades, 18-pin bowling lanes and a children's playzone along with a bar and lounge area. On the top floor of the Trafford centre is a 20 screen Odeon cinema with a large selection of movies to watch and plenty of snacks to enjoy.</p>
+
+            <p>To find out more about what Intu Trafford Centre has to offer, check out their <a href="http://intu.co.uk/traffordcentre" title="External link to Intu Trafford Centre website">official website</a>.</p>
+
+            <div id="map-intu" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -94,7 +104,7 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Ade <span>2 weeks ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -102,12 +112,18 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
+              <p>A visit to the Trafford Centre is always a good idea if you're bored on the weekend, there's a lot to do there. The problem is that the majority of these things involve spending money, so if you're on a budget it's probably best to avoid the place as it's a money sink. It is a mall afterall so this is not a bad thing at all, just something to be aware of.</p>
+
+              <p>The other thing is it's size, it's deceptively big. If you've got all day to spend there you might see everything, or maybe if you flit about the place but as above, it's also a time sink simply because of the sheer size of the place and the amount of shops to go to.</p>
+
+              <p>There is a food court where you can rest up and get something to eat, and a large Odeon Cinema in the premises as well so you can take a break from all the walking about and relax for a bit.</p>
+
+              <p>There really is far too much to cover, but as far as the north-west goes there aren't many places like it. It's a mall, but it's also quite a bit more than that.</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Joe Hopkins <span>3 weeks ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -115,7 +131,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+              <p>Great place for shopping. Visited many times, always plenty of space to park and a big variety of shops. The place is huge like an airport also. :) Note it opens late on a sunday though - went there early and been caught out before.</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -147,7 +163,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>intu Trafford Centre, Stretford, Manchester, M17 8AA</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -158,7 +174,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 749 1717</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -169,7 +185,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://intu.co.uk/traffordcentre">intu.co.uk/traffordcentre</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

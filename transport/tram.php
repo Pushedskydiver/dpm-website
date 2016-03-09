@@ -77,47 +77,11 @@
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>The trams within Manchester are easy to find, they offer a quick service with many destination's available. The main tram stops within Manchester are Deansgate, Piccadilly, Piccadilly Garderns, Market Street and Victoria. From the map you can plan out which route you wish to take depending on your destination. The main places easily reached are Media City, Etihad Stadium, and Manchester Airport.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <a href="http://www.metrolink.co.uk/stationinfo/Documents/Route_Map.pdf" title="External link to PDF file of Metrolnik travel map" class="document-download">Download travel map</a>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
-
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-mag" class="map"></div>
-
-            <!-- BEGIN : REVIEW TITLE -->
-            <div class="review-title">
-              <h2>Recent Reviews</h2>
-            </div>
-            <!-- END : REVIEW TITLE -->
-            <!-- BEGIN : REVIEW BOX -->
-            <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
-            </div>
-            <!-- END : REVIEW BOX -->
-            <!-- BEGIN : REVIEW BOX -->
-            <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
-            </div>
-            <!-- END : REVIEW BOX -->
+            <p>The travel fees for the trams vary between peak and off-peak times and there are a variety of tickets you can purchase. The single journey ticket allows you to only travel once to your required destination and if you want to go back, you will be required to purchase another single ticket. The return journey ticket allows you to travel to your required destination and then travel back to the destination in which you purchased the ticket. The first 2 ticket options only last on the day you purchased them, whereas the weekly journey ticket allows you to travel to your destination and back for the entire week, saving you money and the hassle of buying a ticket every day. For more information on the ticket options and the ticket prices, feel free to visit the <a href="http://www.metrolink.co.uk/" title="External link to Metrolink website">Metrolink website</a>.</p>
           </article>
           <!-- END : ARTICLE -->
           <!--========================================== - ASIDE - ==========================================-->

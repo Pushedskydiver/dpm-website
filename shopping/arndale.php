@@ -30,7 +30,7 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'arndale') {echo 'class="banner-section tram-banner"';} ?> >
+  <section <?php if($page == 'arndale') {echo 'class="banner-section arndale-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -69,23 +69,33 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>The Arndale is a large shopping centre in Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/arndale-shopping-centre.jpg" alt="Wide shot of inside the Arndale on the first floor." />
+              <p>Arndale Shopping Centre</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>Manchester's very own shopping centre, the <b>Arndale</b>, conveniently placed close to Victoria Station and Piccadilly Gardens, is packed full of shops for all your needs. There's plenty of high street shops to buy great clothes and shoes like Topshop/Topman, New Look, Footasylum, H&amp;M, Office and much more. These are all placed either on the ground floor or the first floor but are easy to find. You can also use <a href="https://www.myunidays.com" title="External link to UNIdays webiste">UNIdays</a>, a discount website and app, to get student discounts in the majority of these shops. You can download the app from the iOS and Google Play store for free below.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <div class="flex-container app-badges-container">
+              <div class="app-store-badge">
+                <a href="https://itunes.apple.com/gb/app/unidays/id599608562?mt=8&amp;uo=4" title="External link to UNIdays app on iOS app store."><img src="/dpm-website/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
+              </div>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
+              <div class="app-store-badge">
+                <a href="https://play.google.com/store/apps/details?id=com.myunidays" title="External link to UNIdays app on Google Play app store."><img src="/dpm-website/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
+              </div>
+            </div>
 
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
+            <p>For all your technological needs, there's the Apple store; a stand out store which has iPhones, iPads, Macbooks and every other Apple related product along with a genius bar to aid in fixing any Apple products you might have if they become faulty. Arndale also has a Currys, another store with tons of tech from DSLR cameras to laptops and desktops. Also situated in Arndale is Waterstones where you can buy books, both educational and non educational at affordable prices.</p>
 
-            <div id="map-mag" class="map"></div>
+            <p>When you are done shopping, you can head up to the food court and enjoy some light bites to eat like a Subway or go to Taco Bell, the first Taco Bell ever opened in the UK. Just outside of the Arndale are more shops such as Urban Outfitters, All Saints, Footlocker and lots more, along with 1 of only 4 Selfridges in the UK. One of the most exclusive department stores in the UK outside of London, alongside Harvey Nichols, it has multi-storeys and plenty of luxury brands along with more affordable brands; it is definitely a go to store for the more fashion conscious individual.</p>
+
+            <p>To find out more about what the Arndale has to offer, check out their <a href="https://www.manchesterarndale.com" title="External link to Manchester Arndale website.">official website</a>.</p>
+
+            <div id="map-arn" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -94,7 +104,7 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Neil Dymond-Green <span>In the last week</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -102,12 +112,12 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
+              <p>Manchester Arndale provides covered souping on those infrequent (!) days in the city when it rains. A huge selection of stores in a fresh setting. Good food court, food market and other eateries as well as shopping.</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Sid Bagas <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -115,7 +125,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+              <p>Really enjoyable experience to shop in Manchester with good shops and coffee places. Has been done up really nice as the old Armadale was poor but now I would recommend shopping there anytime. All other major stores and excellent restaurants a few minutes away - Perfect!</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -147,7 +157,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Arndale Shopping Centre, Market Street, Manchester, M4 3AQ</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -158,7 +168,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 833 9851</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -169,7 +179,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="https://www.manchesterarndale.com">manchesterarndale.com</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
