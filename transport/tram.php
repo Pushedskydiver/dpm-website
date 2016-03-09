@@ -82,6 +82,18 @@
             <a href="http://www.metrolink.co.uk/stationinfo/Documents/Route_Map.pdf" title="External link to PDF file of Metrolnik travel map" class="document-download">Download travel map</a>
 
             <p>The travel fees for the trams vary between peak and off-peak times and there are a variety of tickets you can purchase. The single journey ticket allows you to only travel once to your required destination and if you want to go back, you will be required to purchase another single ticket. The return journey ticket allows you to travel to your required destination and then travel back to the destination in which you purchased the ticket. The first 2 ticket options only last on the day you purchased them, whereas the weekly journey ticket allows you to travel to your destination and back for the entire week, saving you money and the hassle of buying a ticket every day. For more information on the ticket options and the ticket prices, feel free to visit the <a href="http://www.metrolink.co.uk/" title="External link to Metrolink website">Metrolink website</a>.</p>
+
+            <p>If you happen to own a smartphone then you can download a fancy new app known as <b>'Get me there'</b>, which was created to help make travelling around Greater Manchester a lot simpler and easier. The aim of the app is to make printed tickets a thing of the past with a range of smarter ways to buy and use public transport, starting with a new get me there smart phone app and a new get me there smart card. This application can be used on both Tram and Bus services with Train services to be introduced at a later stage. To find out more information, visit the <a href="http://www.getmethere.co.uk/" title="External link to Get me there website">Get me there website</a>. The Get me there app is free to donwload on the iOS and Google Play app store below.</p>
+
+            <div class="flex-container app-badges-container">
+              <div class="app-store-badge">
+                <a href="https://itunes.apple.com/us/app/get-me-there-travelcards-for/id1049913060?ls=1&amp;mt=8" title="External link to Get me there app on iOS app store"><img src="/website/dist/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
+              </div>
+
+              <div class="app-store-badge">
+                <a href="https://play.google.com/store/apps/details?id=com.tfgm.getmethere" title="External link to Get me there app on Google Play app store"><img src="/website/dist/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
+              </div>
+            </div>
           </article>
           <!-- END : ARTICLE -->
           <!--========================================== - ASIDE - ==========================================-->
@@ -111,7 +123,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Metrolink RATP Dev UK, Trafford Depot, Warwick Road South, Manchester, M16 0GZ</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -122,7 +134,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 205 2000</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -133,7 +145,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://www.metrolink.co.uk/">metrolink.co.uk</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

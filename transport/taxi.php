@@ -77,47 +77,23 @@
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>Another way of getting around in Manchester is by Taxi's. This can sometimes be the most direct way of getting to your destination. <b>Uber</b> do their own taxi service. By using their <a href="https://www.uber.com" title="External link to Uber website.">website</a> or mobile app on your smartphone you can choose your ride and set your location. You then can see your driver's picture and vehicle details, and can track their arrival on the map. This makes it a quick and easy service to use, you can also link your account to your debt, credit card so that there is no need for cash. With this being a cashless paying system it can be really handy. The app is free to download from the iOS, Google Play and Windows app store below.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
-
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
-
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-mag" class="map"></div>
-
-            <!-- BEGIN : REVIEW TITLE -->
-            <div class="review-title">
-              <h2>Recent Reviews</h2>
-            </div>
-            <!-- END : REVIEW TITLE -->
-            <!-- BEGIN : REVIEW BOX -->
-            <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+            <div class="flex-container app-badges-container">
+              <div class="app-store-badge">
+                <a href="https://200585.measurementapi.com/serve?action=click&amp;publisher_id=200585&amp;site_id=17688&amp;site_publisher=uber-com&amp;_ga=1.4258995.1207944611.1457124087" title="External link to Uber app on iOS app store"><img src="/website/dist/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
-            </div>
-            <!-- END : REVIEW BOX -->
-            <!-- BEGIN : REVIEW BOX -->
-            <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+
+              <div class="app-store-badge">
+                <a href="https://200585.measurementapi.com/serve?action=click&amp;publisher_id=200585&amp;site_id=26744&amp;site_publisher=uber-com&amp;_ga=1.46729767.1207944611.1457124087" title="External link to Uber app on Google Play app store"><img src="/website/dist/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+
+              <div class="app-store-badge">
+                <a href="https://microsoft.com/en-us/store/apps/uber/9wzdncrfhxrd?source=uber-com&amp;_ga=1.46729767.1207944611.1457124087" title="External link to Uber app on Windows app store"><img src="/website/dist/images/app-store-badges/windows-app-store.svg" alt="Official Windows app store badge"></a>
+              </div>
             </div>
-            <!-- END : REVIEW BOX -->
+
+            <p>There are also many other taxi companies that are around in Manchester such as Street Cars, Manchester Taxi's and Manchester Cars. There are also many taxi's that sit outside all the of train stations within Manchester (Victoria, Piccadilly and Oxford Road).</p>
           </article>
           <!-- END : ARTICLE -->
           <!--========================================== - ASIDE - ==========================================-->

@@ -10,39 +10,47 @@
         <div class="col">
           <!-- BEGIN : FOOTER ITEM -->
           <div class="footer-item">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>About This Site</h3>
+            <p>This wesbite is an International Student Guide on Manchester. This site showcases mainly on what Manchester is like, showcasing the types of transport the city has, the types of cuisines, museums and shopping centres surrounding the city centre.</p>
           </div>
           <!-- END : FOOTER ITEM -->
           <!-- BEGIN : FOOTER ITEM -->
           <div class="footer-item">
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3>We Are Social</h3>
+            <div class="footer-social">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="footer-social">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footer-social">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
           </div>
           <!-- END : FOOTER ITEM -->
           <!-- BEGIN : FOOTER ITEM -->
           <div class="footer-item">
             <h3>Quick Links</h3>
             <ul class="quick-links">
-              <li><a href="#">Mexican Food</a></li>
-              <li><a href="#">Chinese Food</a></li>
-              <li><a href="#">American Food</a></li>
-              <li><a href="#">Italian Food</a></li>
-              <li><a href="#">Bus Travel</a></li>
-              <li><a href="#">Taxi Travel</a></li>
-              <li><a href="#">Tram Travel</a></li>
+              <li><a href="/dpm-website/food/bar-burrito.php">Bar Burrito</a></li>
+              <li><a href="/dpm-website/food/wagamama.php">Wagamama</a></li>
+              <li><a href="/dpm-website/food/archies.php">Archie's</a></li>
+              <li><a href="/dpm-website/food/bella-italia.php">Bella italia</a></li>
+              <li><a href="/dpm-website/transport/bus.php">Bus</a></li>
+              <li><a href="/dpm-website/transport/taxi.php">Taxi</a></li>
+              <li><a href="/dpm-website/transport/tram.php">Tram</a></li>
             </ul
             ><ul class="quick-links">
-              <li><a href="#">Arndale Shopping Centre</a></li>
-              <li><a href="#">Intu Trafford Centre</a></li>
-              <li><a href="#">Manchester Art Gallery</a></li>
-              <li><a href="#">Museum of Science &amp; Industry</a></li>
-              <li><a href="#">Museum of Transport</a></li>
+              <li><a href="/dpm-website/shopping/arndale.php">Arndale</a></li>
+              <li><a href="/dpm-website/shopping/intu-trafford-centre.php">Intu Trafford Centre</a></li>
+              <li><a href="/dpm-website/museums/manchester-art-gallery.php">Manchester Art Gallery</a></li>
+              <li><a href="/dpm-website/museums/museum-of-science-and-industry.php">Museum Of Science &amp; Industry</a></li>
+              <li><a href="/dpm-website/museums/museum-of-transport.php">Museum Of Transport</a></li>
             </ul
             ><ul class="quick-links">
-              <li><a href="#">Gorilla Bar</a></li>
-              <li><a href="#">Sankeys</a></li>
-              <li><a href="#">Cloud23</a></li>
+              <li><a href="/dpm-website/nightlife/gorilla-bar.php">Gorilla Bar</a></li>
+              <li><a href="/dpm-website/nightlife/sankeys.php">Sankeys</a></li>
+              <li><a href="/dpm-website/nightlife/cloud23.php">Cloud23</a></li>
             </ul>
           </div>
           <!-- END : FOOTER ITEM -->

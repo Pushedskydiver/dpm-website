@@ -77,47 +77,19 @@
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>There are many bus routes that run within Manchester that make getting to and from places a lot easier. They have their own Metro Shuffle service which is a free service across the city centre. This consists of 3 buses that travel around the city centre. This allows you to travel easily from the Universities up to Arndale to do a bit of shopping and it also includes major Tram and Train stations. There are also other services that run on this route and also buses that go to the hospitals and the Trafford Centre.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>If you happen to own a smartphone then you can download a fancy new app known as <b>'Get me there'</b>, which was created to help make travelling around Greater Manchester a lot simpler and easier. The aim of the app is to make printed tickets a thing of the past with a range of smarter ways to buy and use public transport, starting with a new get me there smart phone app and a new get me there smart card. This application can be used on both Tram and Bus services with Train services to be introduced at a later stage. To find out more information, visit the <a href="http://www.getmethere.co.uk/" title="External link to Get me there website">Get me there website</a>. The Get me there app is free to donwload on the iOS and Google Play app store below.</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
-
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-mag" class="map"></div>
-
-            <!-- BEGIN : REVIEW TITLE -->
-            <div class="review-title">
-              <h2>Recent Reviews</h2>
-            </div>
-            <!-- END : REVIEW TITLE -->
-            <!-- BEGIN : REVIEW BOX -->
-            <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+            <div class="flex-container app-badges-container">
+              <div class="app-store-badge">
+                <a href="https://itunes.apple.com/us/app/get-me-there-travelcards-for/id1049913060?ls=1&amp;mt=8" title="External link to Get me there app on iOS app store"><img src="/website/dist/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
-            </div>
-            <!-- END : REVIEW BOX -->
-            <!-- BEGIN : REVIEW BOX -->
-            <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+
+              <div class="app-store-badge">
+                <a href="https://play.google.com/store/apps/details?id=com.tfgm.getmethere" title="External link to Get me there app on Google Play app store"><img src="/website/dist/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
             </div>
-            <!-- END : REVIEW BOX -->
           </article>
           <!-- END : ARTICLE -->
           <!--========================================== - ASIDE - ==========================================-->
@@ -147,7 +119,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Transport for Greater Manchester headquarters, 2 Piccadilly Place, Manchester, M1 3BG</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -158,7 +130,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 244 1000</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -169,7 +141,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://www.tfgm.com/">www.tfgm.com</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

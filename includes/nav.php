@@ -49,10 +49,10 @@
                 <nav class="classic">
                   <span class="arrow"></span>
                   <ul>
-                    <li><a href="/dpm-website/food/mexican.php">Mexican</a></li>
-                    <li><a href="/dpm-website/food/chinese.php">Chinese</a></li>
-                    <li><a href="/dpm-website/food/american.php">American</a></li>
-                    <li><a href="/dpm-website/food/italian.php">Italian</a></li>
+                    <li><a href="/dpm-website/food/bar-burrito.php">Bar Burrito</a></li>
+                    <li><a href="/dpm-website/food/wagamama.php">Wagamama</a></li>
+                    <li><a href="/dpm-website/food/archies.php">Archie's</a></li>
+                    <li><a href="/dpm-website/food/bella-italia.php">Bella italia</a></li>
                   </ul>
                 </nav>
                 <!-- END : SUB MENU -->

@@ -2,7 +2,7 @@
    $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "/dpm-website/includes/";
    $current = 'food';
-   $page = 'american';
+   $page = 'burrito';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
   <?php $meta_keywords = 'Manchester Metropolitan University, student, Manchester, Man Met, MMU, Info Comms, Department of Journalism, Informantion and Communications, Web Development, Web Dev, Information and Communications, Info Comms, Digital Media and Communications, Multimedia Journalusm, Course Info, current student';?>
 
   <!-- PAGE TITLE -->
-  <?php $page_title = 'Italian | Food | International Student Guide On Manchester | Manchester Metropolitan University';?>
+  <?php $page_title = 'Bar Burrito | Food | International Student Guide On Manchester | Manchester Metropolitan University';?>
 
   <!-- META TAGS  -->
   <meta name="description" content="">
@@ -30,18 +30,18 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'american') {echo 'class="banner-section tram-banner"';} ?> >
+  <section <?php if($page == 'burrito') {echo 'class="banner-section burrito-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
       <div class="row">
         <!-- BEGIN : FLEX CONTAINER -->
         <div class="flex-container col">
-          <h1>American Food</h1>
+          <h1>Bar Burrito</h1>
           <div class="breadcrumbs">
             <a href="/dpm-website/index.php">Home</a>
             <span>Food</span>
-            <span>American</span>
+            <span>Bar Burrito</span>
           </div>
         </div>
         <!-- END : FLEX CONTAINER -->
@@ -77,15 +77,11 @@
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>Bar burrito is a Mexican restaurant; they are known for their Mexican wrap as they have a whole range of flavours such as meat filling or vegetarian filling. They also sell tortillas chips so if people want a light snack it’s a great place to visit.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>The place is an easygoing venue with casual, modern decor and a menu of classic Mexican-style dishes made to order.</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
-
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-mag" class="map"></div>
+            <div id="map-burrito" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -94,28 +90,28 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Daniel Perry <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star star-gray"></i>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
+              <p>Really good for a quick, cheap, healthy-ish meal thats also delicious. Staff are very friendly.</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Oliver Gillum-Webb <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star star-gray"></i>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+              <p>Very quick and super tasty. Great for a quick lunch whilst working!</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -147,7 +143,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Bar Burrito, 65 Deansgate, Manchester, M3 2BW</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -158,7 +154,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 839 1311</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -169,7 +165,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://barburrito.co.uk">barburrito.co.uk</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

@@ -2,7 +2,7 @@
    $path = $_SERVER['DOCUMENT_ROOT'];
    $path .= "/dpm-website/includes/";
    $current = 'food';
-   $page = 'chinese';
+   $page = 'wagamama';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
   <?php $meta_keywords = 'Manchester Metropolitan University, student, Manchester, Man Met, MMU, Info Comms, Department of Journalism, Informantion and Communications, Web Development, Web Dev, Information and Communications, Info Comms, Digital Media and Communications, Multimedia Journalusm, Course Info, current student';?>
 
   <!-- PAGE TITLE -->
-  <?php $page_title = 'Chinese | Food | International Student Guide On Manchester | Manchester Metropolitan University';?>
+  <?php $page_title = 'Wagamama | Food | International Student Guide On Manchester | Manchester Metropolitan University';?>
 
   <!-- META TAGS  -->
   <meta name="description" content="">
@@ -30,18 +30,18 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'chinese') {echo 'class="banner-section tram-banner"';} ?> >
+  <section <?php if($page == 'wagamama') {echo 'class="banner-section wagamama-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
       <div class="row">
         <!-- BEGIN : FLEX CONTAINER -->
         <div class="flex-container col">
-          <h1>Chinese Food</h1>
+          <h1>Wagamama</h1>
           <div class="breadcrumbs">
             <a href="/dpm-website/index.php">Home</a>
             <span>Food</span>
-            <span>Chinese</span>
+            <span>Wagamama</span>
           </div>
         </div>
         <!-- END : FLEX CONTAINER -->
@@ -77,15 +77,11 @@
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>Wagamama is a Chinese restaurant their most popular dish is the prawn firecracker. The restaurants seating is excellent as the atmosphere makes people feel like they are seated abroad. They customer service has great reviews as they check up on you and see how the people's meals are going.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>As of September 2014, the chain includes 140+ restaurants, with 110 being in the UK. Other restaurants are located in Belgium, Cyprus, Denmark, Gibraltar, Greece, Ireland, Kuwait, Malta, the Netherlands, New Zealand, Qatar, Sweden, Switzerland, Turkey, the UAE and the United States (also formerly in Australia.).</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
-
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-mag" class="map"></div>
+            <div id="map-wag" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -94,7 +90,7 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>James Nixon Steel <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -102,20 +98,20 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
+              <p>I love wagamamas and this one is no different. Big open, spacious and clean. The staff are quick too.</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Jesús García <span>3 months ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star star-gray"></i>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+              <p>Good, clean and tasty oriental based cuisine. Nice and clean facilities. Good and polite staff. Nice place to share a meal with friends. Reasonably priced.</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -147,7 +143,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Wagamama, 1 Spinningfields Square, Manchester, M3 3AP</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -158,7 +154,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 833 9883</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -169,7 +165,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://www.wagamama.com/">www.wagamama.com</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

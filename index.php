@@ -45,7 +45,7 @@
                   <div class="slider-content">
                     <div class="container">
                       <div class="col col100">
-                        <h1 class="sm-text-center" data-swiper-parallax="-15%">Lorem ipsum dolor sit amet consectetur</h1>
+                        <h1 class="sm-text-center" data-swiper-parallax="-15%">Love Manchester - The city of industry</h1>
                         <h5 class="sm-text-center">Excepteur sint occaecat cupidatat non proident sunt in culpa.</h5>
                       </div>
                     </div>
