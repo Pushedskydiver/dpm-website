@@ -1,0 +1,11 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Gulp files
+node_modules
+package.json
+gulpfile.js
+
+#Development folder
+app
