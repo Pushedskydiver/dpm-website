@@ -72,7 +72,7 @@
             <h1>There are many bus routes that run throughout Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/bus.jpg" alt="Wide shot of buses at Piccadilly Gardens bus stop" />
+              <img src="/dpm-website/dist/images/bus.jpg" alt="Wide shot of buses at Piccadilly Gardens bus stop" />
               <p>Piccadilly Gardens bus stop.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

@@ -72,7 +72,7 @@
             <h1>The Arndale is a large shopping centre in Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/arndale-shopping-centre.jpg" alt="Wide shot of inside the Arndale on the first floor." />
+              <img src="/dpm-website/dist/images/arndale-shopping-centre.jpg" alt="Wide shot of inside the Arndale on the first floor." />
               <p>Arndale Shopping Centre</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
@@ -81,11 +81,11 @@
 
             <div class="flex-container app-badges-container">
               <div class="app-store-badge">
-                <a href="https://itunes.apple.com/gb/app/unidays/id599608562?mt=8&amp;uo=4" title="External link to UNIdays app on iOS app store."><img src="/dpm-website/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
+                <a href="https://itunes.apple.com/gb/app/unidays/id599608562?mt=8&amp;uo=4" title="External link to UNIdays app on iOS app store."><img src="/dpm-website/dist/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
               </div>
 
               <div class="app-store-badge">
-                <a href="https://play.google.com/store/apps/details?id=com.myunidays" title="External link to UNIdays app on Google Play app store."><img src="/dpm-website/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.myunidays" title="External link to UNIdays app on Google Play app store."><img src="/dpm-website/dist/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
               </div>
             </div>
 

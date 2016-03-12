@@ -72,7 +72,7 @@
             <h1>Bar burrito is a Mexican restaurant most known for their Mexican wrap.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/bar-burrito.jpg" alt="Wide shot of inside Bar Burrito restaurant" />
+              <img src="/dpm-website/dist/images/bar-burrito.jpg" alt="Wide shot of inside Bar Burrito restaurant" />
               <p>Inside Bar Burrito restaurant.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

@@ -73,7 +73,7 @@
             <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
+              <img src="/dpm-website/dist/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
               <p>Joana Vasconcelos: Time Machine</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

@@ -97,14 +97,5 @@
 
 
 <!-- JS SCRIPTS -->
-<script src="/dpm-website/js/jquery.min.js"></script>
-<script src="/dpm-website/js/modernizr.min.js"></script>
-<script src="/dpm-website/js/jquery.waypoints.min.js"></script>
-<script src="/dpm-website/js/wow.min.js"></script>
-<script src="/dpm-website/js/smoothscroll.js"></script>
-<script src="/dpm-website/js/velocity.min.js"></script>
-<script src="/dpm-website/js/jquery.lazyload.min.js"></script>
-<script src="/dpm-website/js/swiper.jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="/dpm-website/js/script.js"></script>
-<script>new WOW().init();</script>
+<script src="/dpm-website/dist/js/main.js"></script>

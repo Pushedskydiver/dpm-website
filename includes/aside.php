@@ -75,105 +75,105 @@
   <!-- END : WIDGET TITLE -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'food' && $page !== 'burrito') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/bar-burrito.jpg" alt="Wide shot of Bar Burrito building" />
+    <img src="/dpm-website/dist/images/banners/bar-burrito.jpg" alt="Wide shot of Bar Burrito building" />
     <h4>Bar Burrito</h4>
     <a href="/dpm-website/food/bar-burrito.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'food' && $page !== 'wagamama') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/wagamama.jpg" alt="Wide shot of Wagamama building" />
+    <img src="/dpm-website/dist/images/banners/wagamama.jpg" alt="Wide shot of Wagamama building" />
     <h4>Wagamama</h4>
     <a href="/dpm-website/food/wagamama.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'food' && $page !== 'archies') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/archies.jpg" alt="Wide shot of archies building" />
+    <img src="/dpm-website/dist/images/banners/archies.jpg" alt="Wide shot of archies building" />
     <h4>Archie's</h4>
     <a href="/dpm-website/food/archies.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'food' && $page !== 'bella') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/bella-italia.jpg" alt="Wide shot of Bella Italia banner" />
+    <img src="/dpm-website/dist/images/banners/bella-italia.jpg" alt="Wide shot of Bella Italia banner" />
     <h4>Bella Italia</h4>
     <a href="/dpm-website/food/bella-italia.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'transport' && $page !== 'bus') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/bus-banner.jpg" alt="Wide shot of a double decker bus in Manchester" />
+    <img src="/dpm-website/dist/images/banners/bus-banner.jpg" alt="Wide shot of a double decker bus in Manchester" />
     <h4>Bus</h4>
     <a href="/dpm-website/transport/bus.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'transport' && $page !== 'taxi') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/taxi-banner.jpg" alt="Wide shot of a black taxi in Manchester" />
+    <img src="/dpm-website/dist/images/banners/taxi-banner.jpg" alt="Wide shot of a black taxi in Manchester" />
     <h4>Taxi</h4>
     <a href="/dpm-website/transport/taxi.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'transport' && $page !== 'tram') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/tram-banner.jpg" alt="Wide shot of a tram in Manchester" />
+    <img src="/dpm-website/dist/images/banners/tram-banner.jpg" alt="Wide shot of a tram in Manchester" />
     <h4>Tram</h4>
     <a href="/dpm-website/transport/tram.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'shopping' && $page !== 'arndale') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/manchester-arndale.jpg" alt="Wide shot of the Manchester Arndale building" />
+    <img src="/dpm-website/dist/images/banners/manchester-arndale.jpg" alt="Wide shot of the Manchester Arndale building" />
     <h4>Arndale Shopping Centre</h4>
     <a href="/dpm-website/shopping/arndale.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'shopping' && $page !== 'intu') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/intu-trafford-centre.jpg" alt="Wide shot of Intu Trafford Centre building" />
+    <img src="/dpm-website/dist/images/banners/intu-trafford-centre.jpg" alt="Wide shot of Intu Trafford Centre building" />
     <h4>Intu Trafford Centre</h4>
     <a href="/dpm-website/shopping/intu-trafford-centre.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'museum' && $page !== 'mag') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/manchester-art-gallery.jpg" alt="Wide shot of the Manchester Art Gallery building" />
+    <img src="/dpm-website/dist/images/manchester-art-gallery.jpg" alt="Wide shot of the Manchester Art Gallery building" />
     <h4>Manchester Art Gallery</h4>
     <a href="/dpm-website/museums/manchester-art-gallery.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'museum' && $page !== 'mosi') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/manchester-mosi.jpg" alt="Wide shot of the Museuem of Science and Industry" />
+    <img src="/dpm-website/dist/images/manchester-mosi.jpg" alt="Wide shot of the Museuem of Science and Industry" />
     <h4>Museum Of Science &amp; Industry</h4>
     <a href="/dpm-website/museums/museum-of-science-and-industry.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'museum' && $page !== 'mot') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/manchester-museum-of-transport.jpg" alt="Wide shot of line of histroic buses in manchester" />
+    <img src="/dpm-website/dist/images/manchester-museum-of-transport.jpg" alt="Wide shot of line of histroic buses in manchester" />
     <h4>Museum of Transport</h4>
     <a href="/dpm-website/museums/museum-of-transport.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'nightlife' && $page !== 'gorilla') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/gorilla-manchester.jpg" alt="Wide shot of Gorilla bar building" />
+    <img src="/dpm-website/dist/images/banners/gorilla-manchester.jpg" alt="Wide shot of Gorilla bar building" />
     <h4>Gorilla Bar</h4>
     <a href="/dpm-website/nightlife/gorilla-bar.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'nightlife' && $page !== 'sankeys') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/sankeys.jpg" alt="shot behind DJ inside Sankeys with people dancing in background and flashing lights" />
+    <img src="/dpm-website/dist/images/banners/sankeys.jpg" alt="shot behind DJ inside Sankeys with people dancing in background and flashing lights" />
     <h4>Sankeys</h4>
     <a href="/dpm-website/nightlife/sankeys.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
   <!-- BEGIN : RELATED PAGES -->
   <div <?php if($current == 'nightlife' && $page !== 'cloud') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
-    <img src="/dpm-website/images/banners/cloud23.jpg" alt="Wide shot of inside Cloud23 bar" />
+    <img src="/dpm-website/dist/images/banners/cloud23.jpg" alt="Wide shot of inside Cloud23 bar" />
     <h4>Cloud 23</h4>
     <a href="/dpm-website/nightlife/cloud23.php">Details</a>
   </div>

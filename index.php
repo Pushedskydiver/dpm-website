@@ -34,7 +34,7 @@
             <!-- BEGIN : IMAGE PARRALAX -->
             <div class="slider-wrapper">
               <div class="background-wrapper" data-swiper-parallax="30%">
-                <div class="background" data-pages-bg-image="images/slider/manchester-city-centre.jpg"></div>
+                <div class="background" data-pages-bg-image="dist/images/slider/manchester-city-centre.jpg"></div>
               </div>
             </div>
             <!-- END : IMAGE PARRALAX -->
@@ -62,7 +62,7 @@
             <div class="slider-wrapper">
               <div class="background-wrapper" data-swiper-parallax="30%">
                 <!-- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes -->
-                <div class="background" data-pages-bg-image="images/slider/metrolink.jpg"></div>
+                <div class="background" data-pages-bg-image="dist/images/slider/metrolink.jpg"></div>
               </div>
             </div>
             <!-- END : IMAGE PARRALAX -->
@@ -89,7 +89,7 @@
             <!-- BEGIN : IMAGE PARRALAX -->
             <div class="slider-wrapper">
               <div class="background-wrapper" data-swiper-parallax="30%">
-                <div class="background" data-pages-bg-image="images/slider/manchester-art-gallery.jpg"></div>
+                <div class="background" data-pages-bg-image="dist/images/slider/manchester-art-gallery.jpg"></div>
               </div>
             </div>
             <!-- END : IMAGE PARRALAX -->
@@ -140,7 +140,7 @@
           <div class="flex-container">
             <!-- BEGIN : JUMP FLEX ITEM -->
             <div class="jump-flex-item">
-              <a href="/dpm-website/food/bar-burrito.php"><div class="jump-overlay"></div><img src="images/jumps/bar-burrito.jpg" alt="Wide shot of Bar Burrito building" /></a>
+              <a href="/dpm-website/food/bar-burrito.php"><div class="jump-overlay"></div><img src="/dpm-website/dist/images/jumps/bar-burrito.jpg" alt="Wide shot of Bar Burrito building" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
                 <h3 class="jump-title"><a href="/dpm-website/food/bar-burrito.php">Bar Burrito</a></h3>
@@ -151,7 +151,7 @@
             <!-- END : JUMP FLEX ITEM -->
             <!-- BEGIN : JUMP FLEX ITEM -->
             <div class="jump-flex-item">
-              <a href="/dpm-website/food/wagamama.php"><div class="jump-overlay"></div><img src="images/jumps/wagamama.jpg" alt="Wide shot of wagamama building" /></a>
+              <a href="/dpm-website/food/wagamama.php"><div class="jump-overlay"></div><img src="/dpm-website/dist/images/jumps/wagamama.jpg" alt="Wide shot of wagamama building" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
                 <h3 class="jump-title"><a href="/dpm-website/food/wagamama.php">Wagamama</a></h3>
@@ -162,7 +162,7 @@
             <!-- END : JUMP FLEX ITEM -->
             <!-- BEGIN : JUMP FLEX ITEM -->
             <div class="jump-flex-item">
-              <a href="/dpm-website/food/archies.php"><div class="jump-overlay"></div><img src="images/jumps/archies.jpg" alt="Wide shot of Archie's building" /></a>
+              <a href="/dpm-website/food/archies.php"><div class="jump-overlay"></div><img src="/dpm-website/dist/images/jumps/archies.jpg" alt="Wide shot of Archie's building" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
                 <h3 class="jump-title"><a href="/dpm-website/food/archies.php">Archie's</a></h3>
@@ -173,7 +173,7 @@
             <!-- END : JUMP FLEX ITMWM -->
             <!-- BEGIN : JUMP FLEX ITEM -->
             <div class="jump-flex-item">
-              <a href="/dpm-website/food/bella-italia.php"><div class="jump-overlay"></div><img src="images/jumps/bella-italia.jpg" alt="Wide shot of Bella Italia building" /></a>
+              <a href="/dpm-website/food/bella-italia.php"><div class="jump-overlay"></div><img src="/dpm-website/dist/images/jumps/bella-italia.jpg" alt="Wide shot of Bella Italia building" /></a>
               <!-- BEGIN : JUMP CONTENT -->
               <div class="jump-content">
                 <h3 class="jump-title"><a href="/dpm-website/food/bella-italia.php">Bella Italia</a></h3>
@@ -234,7 +234,7 @@
               </a>
               <div class="cat-item-links">
                 <ul>
-                  <li><a href="/dpm-website/transport/barbus.php">Bus</a></li>
+                  <li><a href="/dpm-website/transport/bus.php">Bus</a></li>
                   <li><a href="/dpm-website/transport/taxi.php">Taxi</a></li>
                   <li><a href="/dpm-website/transport/tram.php">Tram</a></li>
                 </ul>

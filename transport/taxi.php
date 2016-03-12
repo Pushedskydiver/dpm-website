@@ -72,7 +72,7 @@
             <h1>There are a wide variety of taxi services that surround Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/taxi.jpg" alt="Wide shot of a line of taxis outside Manchester city Footbll Club store." />
+              <img src="/dpm-website/dist/images/taxi.jpg" alt="Wide shot of a line of taxis outside Manchester city Footbll Club store." />
               <p>Manchester City Football club store.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

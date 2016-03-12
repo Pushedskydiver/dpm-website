@@ -69,7 +69,7 @@
             <h1>Gorilla is a popular bar which is located in the city centre.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/gorilla.jpg" alt="Wide shot inside Gorilla Bar" />
+              <img src="/dpm-website/dist/images/gorilla.jpg" alt="Wide shot inside Gorilla Bar" />
               <p>Inside Gorilla Bar, Manchester.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

@@ -72,7 +72,7 @@
             <h1>Archie's is a fast food American diner based in Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/archies.jpg" alt="Wide shot of inside an Archie's diner" />
+              <img src="/dpm-website/dist/images/archies.jpg" alt="Wide shot of inside an Archie's diner" />
               <p>Inside an Archie's diner.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

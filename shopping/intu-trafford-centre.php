@@ -72,7 +72,7 @@
             <h1>Intu Trafford Centre is a 3-storey mall for fashion and homeware shops, department store, restaurants and multi-screen cinema.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/intu-trafford-centre.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
+              <img src="/dpm-website/dist/images/intu-trafford-centre.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
               <p>Intu Trafford Centre</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
@@ -83,11 +83,11 @@
 
             <div class="flex-container app-badges-container">
               <div class="app-store-badge">
-                <a href="https://itunes.apple.com/gb/app/unidays/id599608562?mt=8&amp;uo=4" title="External link to UNIdays app on iOS app store."><img src="/dpm-website/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
+                <a href="https://itunes.apple.com/gb/app/unidays/id599608562?mt=8&amp;uo=4" title="External link to UNIdays app on iOS app store."><img src="/dpm-website/dist/images/app-store-badges/ios-app-store.svg" alt="Official iOS app store badge"></a>
               </div>
 
               <div class="app-store-badge">
-                <a href="https://play.google.com/store/apps/details?id=com.myunidays" title="External link to UNIdays app on Google Play app store."><img src="/dpm-website/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.myunidays" title="External link to UNIdays app on Google Play app store."><img src="/dpm-website/dist/images/app-store-badges/google-play-store.svg" alt="Official Google Play app store badge"></a>
               </div>
             </div>
 

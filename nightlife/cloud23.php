@@ -69,7 +69,7 @@
             <h1>Cloud 23 id the Hilton hotel's smart cocktail and champagne bar on the 23rd floor of the landmark Beetham Tower.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/beetham-tower.jpg" alt="Wide shot looking up at Beetham Tower" />
+              <img src="/dpm-website/dist/images/beetham-tower.jpg" alt="Wide shot looking up at Beetham Tower" />
               <p>Beetham Tower: Home to the Cloud 23 bar.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

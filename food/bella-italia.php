@@ -72,7 +72,7 @@
             <h1>Bella Italia is an Italian restaurant with over 80 Italian restaurants operating in the United Kingdom.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/bella-italia.jpg" alt="Left side wide shot of Bella Italia building" />
+              <img src="/dpm-website/dist/images/bella-italia.jpg" alt="Left side wide shot of Bella Italia building" />
               <p>The Bella Italia restaurant in Deansgate, Manchester.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

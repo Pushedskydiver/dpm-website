@@ -73,7 +73,7 @@
             <h1>The Museum of Science and Industry is devoted to the development of science, technology and industry.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/manchester-baby.jpg" alt="Left side wide shot of the Manchester Baby computer" />
+              <img src="/dpm-website/dist/images/manchester-baby.jpg" alt="Left side wide shot of the Manchester Baby computer" />
               <p>Manchester Baby: The world's first stored program computer.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

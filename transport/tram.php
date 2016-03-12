@@ -72,7 +72,7 @@
             <h1>Manchester Metrolink is a tram rail system in Greater Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/tram.jpg" alt="Wide shot of Tram at Piccadilly Tram stop" />
+              <img src="/dpm-website/dist/images/tram.jpg" alt="Wide shot of Tram at Piccadilly Tram stop" />
               <p>Piccadilly Tram station.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

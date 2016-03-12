@@ -73,7 +73,7 @@
             <h1>The Museum of Transport showcases the British histroy of transportation.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/mot.jpg" alt="Wide shot of Museum of Transport entrance." />
+              <img src="/dpm-website/dist/images/mot.jpg" alt="Wide shot of Museum of Transport entrance." />
               <p>Joana Vasconcelos: Time Machine</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

@@ -12,7 +12,7 @@
           <div class="header-inner">
             <!-- BEGIN : LOGO -->
             <div class="logo">
-              <a href="/dpm-website/index.php"><img src="/dpm-website/images/logo.png" width="50" alt=""> Manchester</a>
+              <a href="/dpm-website/index.php"><img src="/dpm-website/dist/images/logo.png" width="50" alt=""> Manchester</a>
             </div>
             <!-- END : LOGO -->
           </div>

@@ -69,7 +69,7 @@
             <h1>Sankeys is a nightclub franchise with its first nightclub in Ancoats, Manchester, England.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/sankeys.jpg" alt="Wide shot of people queuing outside Sankeys" />
+              <img src="/dpm-website/dist/images/sankeys.jpg" alt="Wide shot of people queuing outside Sankeys" />
               <p>People queuing outside Sankeys.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->

@@ -72,7 +72,7 @@
             <h1>Wagamama is a Chinese restaurant based in Manchester city Centre.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/wagamama.jpg" alt="Wide shot of inside Wagamama restaurant" />
+              <img src="/dpm-website/dist/images/wagamama.jpg" alt="Wide shot of inside Wagamama restaurant" />
               <p>Inside Wagamama restaurant in Manchester.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
