@@ -30,7 +30,7 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'mosi') {echo 'class="banner-section mag-banner"';} ?> >
+  <section <?php if($page == 'mosi') {echo 'class="banner-section mosi-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -38,7 +38,7 @@
         <!-- BEGIN : FLEX CONTAINER -->
         <div class="flex-container col">
           <h1>Museum of Science and Industry</h1>
-          <p><i class="fa fa-map-marker"></i> Mosley Street, Manchester M2 3JL</p>
+          <p><i class="fa fa-map-marker"></i>  Liverpool Road, Manchester, M3 4FP</p>
           <div class="breadcrumbs">
             <a href="/dpm-website/index.php">Home</a>
             <span>Museums</span>
@@ -70,23 +70,21 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>The Museum of Science and Industry is devoted to the development of science, technology and industry.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/manchester-baby.jpg" alt="Left side wide shot of the Manchester Baby computer" />
+              <p>Manchester Baby: The world's first stored program computer.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>The Museum of Science and Industry (MSI or MOSI) in Manchester, is a large museum devoted to the development of science, technology and industry with emphasis on the city's achievements in these fields. The museum is part of the Science Museum Group, a non-departmental public body of the Department for Culture, Media and Sport, having merged with the National Science Museum in 2012.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>There are extensive displays on the theme of transport (cars, aircraft, railway locomotives and rolling stock), power (water, electricity, steam and gas engines), Manchester's sewerage and sanitation, textiles, communications and computing.</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
+            <p>The museum is an Anchor Point of the European Route of Industrial Heritage; and is situated on the site of the world's first railway station – Manchester Liverpool Road – which opened as part of the Liverpool and Manchester Railway in September 1830. The railway station frontage and 1830 warehouse are both Grade I listed. The museum also offers steam train rides at weekends and on bank holidays.</p>
 
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-mag" class="map"></div>
+            <div id="map-mosi" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -95,7 +93,7 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Charlotte Callaghan <span>In the last week</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -103,20 +101,20 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
+              <p>I've been here for evening events and daytime exhibitions. It's fascinating and the staff are lovely! Great day or evening out!</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Bob Sparticus <span>3 weeks ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star star-gray"></i>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+              <p>Best place to take the kids in a school holiday. one small gripe: ordered a tea in the restaurant and would have liked whole milk in it. They had none. This is a busy restaurant (and not cheap) they must serve thousands a day. Would it hurt to have a bottle or two of whole milk - I can't be the only person in the world that thinks tea tastes better with!</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -135,7 +133,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'mosi') {echo 'class="location-details mosi-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -148,7 +146,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Museum of Science &amp; Industry, Liverpool Road, Manchester, M3 4FP</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -159,7 +157,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 832 2244</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -170,7 +168,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://www.msimanchester.org.uk">www.msimanchester.org.uk</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

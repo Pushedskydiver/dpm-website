@@ -1148,6 +1148,14 @@ section.banner-section .flex-container {
   background: url('../images/banners/manchester-art-gallery.jpg') no-repeat;
 }
 
+.mosi-banner {
+  background: url('../images/banners/mosi.jpg') no-repeat;
+}
+
+.mot-banner {
+  background: url('../images/banners/mot.jpg') no-repeat;
+}
+
 .arndale-banner {
   background: url('../images/banners/manchester-arndale.jpg') no-repeat;
 }
@@ -1158,6 +1166,14 @@ section.banner-section .flex-container {
 
 .gorilla-banner {
   background: url('../images/banners/gorilla-manchester.jpg') no-repeat;
+}
+
+.sankeys-banner {
+  background: url('../images/banners/sankeys.jpg') no-repeat;
+}
+
+.cloud-banner {
+  background: url('../images/banners/cloud23.jpg') no-repeat;
 }
 
 .bus-banner {
@@ -1499,7 +1515,6 @@ main.main-content aside li a:hover::after {
 
 section.location-details {
   position: relative;
-  background: url('../images/manchester-art-gallery.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 60px;
@@ -1816,20 +1831,56 @@ section.jumps-section {
   opacity: 1;
 }
 
-.panel1 {
-  background: url('../images/jumps/jump-1.jpg') no-repeat;
+.panel1.bus {
+  background: url('../images/jumps/bus.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.panel2 {
-  background: url('../images/jumps/jump-2.jpg') no-repeat;
+.panel2.taxi {
+  background: url('../images/jumps/taxi.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.panel3 {
-  background: url('../images/jumps/jump-3.jpg') no-repeat;
+.panel3.tram {
+  background: url('../images/jumps/tram.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panel1.mag {
+  background: url('../images/jumps/mag.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panel2.mosi {
+  background: url('../images/jumps/mosi.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panel3.mot {
+  background: url('../images/jumps/mot.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panel1.gorilla {
+  background: url('../images/jumps/gorilla.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panel2.sankeys {
+  background: url('../images/jumps/sankeys.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.panel3.cloud {
+  background: url('../images/jumps/cloud23.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -1872,10 +1923,17 @@ section.jumps-section {
 }
 
 .category-item {
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
   margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.category-item-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .category-item:last-child {
@@ -1887,7 +1945,6 @@ section.jumps-section {
   padding: 40px 10px;
   color: #fff;
   border: 2px solid #fff;
-  cursor: pointer;
 }
 
 .category-item a:hover {
@@ -1904,6 +1961,90 @@ section.jumps-section {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
+}
+
+.category-item .cat-item-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #38c9ff;
+
+  -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.category-item:hover .cat-item-links,
+.category-item.clicked .cat-item-links {
+  top: 0;
+}
+
+.category-item ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.category-item li {
+  margin-bottom: 10px;
+}
+
+.category-item li:last-child {
+  margin-bottom: 0;
+}
+
+.category-item li a {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.category-item li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+
+  -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.category-item li a:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.category-item li a:hover::after {
+  width: 100%;
 }
 
 

@@ -135,7 +135,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'mag') {echo 'class="location-details mag-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->

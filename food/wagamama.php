@@ -69,15 +69,15 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>Wagamama is a Chinese restaurant based in Manchester city Centre.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/wagamama.jpg" alt="Wide shot of inside Wagamama restaurant" />
+              <p>Inside Wagamama restaurant in Manchester.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>Wagamama is a Chinese restaurant their most popular dish is the prawn firecracker. The restaurants seating is excellent as the atmosphere makes people feel like they are seated abroad. They customer service has great reviews as they check up on you and see how the people's meals are going.</p>
+            <p>Wagamama is a Chinese restaurant, their most popular dish is the prawn firecracker. The restaurants seating is excellent as the atmosphere makes people feel like they are seated abroad. They customer service has great reviews as they check up on you and see how the people's meals are going.</p>
 
             <p>As of September 2014, the chain includes 140+ restaurants, with 110 being in the UK. Other restaurants are located in Belgium, Cyprus, Denmark, Gibraltar, Greece, Ireland, Kuwait, Malta, the Netherlands, New Zealand, Qatar, Sweden, Switzerland, Turkey, the UAE and the United States (also formerly in Australia.).</p>
 
@@ -130,7 +130,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'wagamama') {echo 'class="location-details wagamama-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->

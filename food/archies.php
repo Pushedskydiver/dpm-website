@@ -69,11 +69,11 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>Archie's is a fast food American diner based in Manchester.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/archies.jpg" alt="Wide shot of inside an Archie's diner" />
+              <p>Inside an Archie's diner.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
@@ -134,7 +134,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'archies') {echo 'class="location-details archies-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->

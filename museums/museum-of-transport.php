@@ -30,7 +30,7 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'mot') {echo 'class="banner-section mag-banner"';} ?> >
+  <section <?php if($page == 'mot') {echo 'class="banner-section mot-banner"';} ?> >
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -38,7 +38,7 @@
         <!-- BEGIN : FLEX CONTAINER -->
         <div class="flex-container col">
           <h1>Museum of Transport</h1>
-          <p><i class="fa fa-map-marker"></i> Mosley Street, Manchester M2 3JL</p>
+          <p><i class="fa fa-map-marker"></i> Boyle Street, Cheetham, Manchester, M8 8UW</p>
           <div class="breadcrumbs">
             <a href="/dpm-website/index.php">Home</a>
             <span>Museums</span>
@@ -70,23 +70,23 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>The Museum of Transport showcases the British histroy of transportation.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
+              <img src="/dpm-website/images/mot.jpg" alt="Wide shot of Museum of Transport entrance." />
               <p>Joana Vasconcelos: Time Machine</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Piccadilly bus stop and walking through Mosley Street.</p>
+            <p>The Museum of Transport, Greater Manchester is a museum that aims to preserve and promote the public transport heritage of Greater Manchester, a metropolitan county in North West England. Owned by Transport for Greater Manchester, the museum is located in the Cheetham Hill area of Manchester.</p>
 
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>The museum holds a sizeable collection, one of the largest of its kind in the UK. Due to the size of the building, some vehicles have to be kept off-site, with exhibits changed around every so often. In addition, vehicles often attend events around the country during the summer months.</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
+            <p>The museum itself is owned by Transport for Greater Manchester, having been established at the Boyle Street site, Cheetham Hill, since 1977. The museum, which was opened to the public in a blaze of publicity two years later on 27 May 1979, was set up to actively promote interest in the history and heritage of Greater Manchester's local passenger transport system. The day-to-day running of the museum is carried out by volunteers from the Greater Manchester Transport Society (initially the SELNEC Transport Society).</p>
 
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
+            <p>The museum collection is constantly developing and restoration work can be often be seen by visitors giving the display a lively, working atmosphere. In the future, the collection of vehicles and other artefacts relating to the roads of Greater Manchester will continue to grow, with the Museum further developing its facilities as well as restoring items which have already been received but which remain in derelict condition. With Transport for Greater Manchester's continuing assistance, it is hoped the museum will continue to be a focal point and a major attraction of its type.</p>
 
-            <div id="map-mag" class="map"></div>
+            <div id="map-mot" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -95,7 +95,7 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Neil Dymond-Green <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Robert Jump <span>2 weeks ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -103,20 +103,20 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>Fantastic range of artworks, particularly the stunning Pre-Raphaelite collection.</p>
+              <p>Excellent range of buses from a 19th Century Horse Bus to recent additions that look as if they just came in off duty. The Cafe was basic but well managed.</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Mark Scullion <span>2 months ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Chris Northwood <span>A year ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star star-gray"></i>
+                <i class="fa fa-star star-gray"></i>
               </div>
-              <p>Used to come here all the time during dinner time. The gallery offers a wide range pieces of art. I'm hardly into art, but its great to go in and take some time to look about. On the 3rd floor they usually have this 'touch the experiments' I think its labeled. Where kids can dress up, or build colourful towers!</p>
+              <p>Extensive collection of Greater Manchester buses from over the years, as well as the mock-up Metrolink tram. Sadly the collection isn't curated brilliantly and is more for looking at than interacting with, but if you're interested in transport, it's still worth checking out.</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -135,7 +135,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'mot') {echo 'class="location-details mot-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -148,7 +148,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Manchester Art Gallery, Mosley Street, Manchester, M2 3JL</p>
+              <p>Museum of Transport, Boyle Street, Cheetham, Manchester, M8 8UW</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -159,7 +159,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 235 8888</p>
+              <p>0161 205 2122</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -170,7 +170,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://manchesterartgallery.org">manchesterartgallery.org</a></p>
+              <p><a href="http://www.gmts.co.uk">www.gmts.co.uk</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

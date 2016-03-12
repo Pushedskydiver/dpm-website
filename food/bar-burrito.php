@@ -69,11 +69,11 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Manchester Art Gallery is a publicly owned art museum in Manchester city centre.</h1>
+            <h1>Bar burrito is a Mexican restaurant most known for their Mexican wrap.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/bar-burrito.jpg" alt="Wide shot of inside Bar Burrito restaurant" />
+              <p>Inside Bar Burrito restaurant.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
 
@@ -130,7 +130,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'burrito') {echo 'class="location-details burrito-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->

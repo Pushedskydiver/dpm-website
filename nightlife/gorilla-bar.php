@@ -69,15 +69,15 @@
             <h1>Gorilla is a popular bar which is located in the city centre.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/gorilla.jpg" alt="Wide shot inside Gorilla Bar" />
+              <p>Inside Gorilla Bar, Manchester.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>When talking about nightlife in Manchester there are several aspects that need to be taken into consideration. International students will want to explore the University world and also social world in different perspectives.</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
+            <p>The nightlife of Manchester is something an International student will often want to interact it as it consists of going to clubs, bars and varies other forms of entertainment. As well as International students wanting to become Independent at university they will also want to make friends. One way they will be able to do this is going out at night and interacting with individuals.</p>
 
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
+            <p>Under the railway tracks on Whitworth Street West is Gorilla, a bar, kitchen, live venue and club space from the people behind Trof and The Deaf Institute. Gorilla is a great live music venue because it is small and personal. On the drinks list, we have a full menu of cocktails and shakes, alongside the best in bottled and canned beers, fine wines and fair-trade coffees. Prices are also very reasonable as well, Gorilla Drink Menu.</p>
 
             <div id="map-gorilla" class="map"></div>
 
@@ -128,7 +128,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'gorilla') {echo 'class="location-details gorilla-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->

@@ -9,7 +9,7 @@
 <html lang="en">
 
   <!-- PAGE TITLE -->
-  <?php $page_title = 'Cloud23 | Nightlife | International Student Guide On Manchester | Manchester Metropolitan University';?>
+  <?php $page_title = 'Cloud 23 | Nightlife | International Student Guide On Manchester | Manchester Metropolitan University';?>
 
   <!-- META TAGS  -->
   <?php $meta_description = '';?>
@@ -26,19 +26,19 @@
 
 
   <!--******************** BANNER SECTION : Start ********************-->
-  <section <?php if($page == 'cloud') {echo 'class="banner-section gorilla-banner"';} ?>>
+  <section <?php if($page == 'cloud') {echo 'class="banner-section cloud-banner"';} ?>>
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
       <div class="row">
         <!-- BEGIN : FLEX CONTAINER -->
         <div class="flex-container col">
-          <h1>Cloud23</h1>
-          <p><i class="fa fa-map-marker"></i> 54-56 Whitworth Street, Manchester, M1 5WW</p>
+          <h1>Cloud 23</h1>
+          <p><i class="fa fa-map-marker"></i> Beetham Tower, 303 Deansgate, Manchester, M3 4LQ</p>
           <div class="breadcrumbs">
             <a href="/website/index.php">Home</a>
             <span>Nightlife</span>
-            <span>Cloud23</span>
+            <span>Cloud 23</span>
           </div>
         </div>
         <!-- END : FLEX CONTAINER -->
@@ -66,20 +66,18 @@
         <div class="flex-container">
           <!-- BEGIN : ARTICLE -->
           <article class="col">
-            <h1>Gorilla is a popular bar which is located in the city centre.</h1>
+            <h1>Cloud 23 id the Hilton hotel's smart cocktail and champagne bar on the 23rd floor of the landmark Beetham Tower.</h1>
             <!-- BEGIN : ARTICLE IMAGE -->
             <div class="article-img">
-              <img src="/dpm-website/images/joana-vasconcelos-time-machine.jpg" alt="Wide shot of Joana Vasconcelos Time Machine" />
-              <p>Joana Vasconcelos: Time Machine</p>
+              <img src="/dpm-website/images/beetham-tower.jpg" alt="Wide shot looking up at Beetham Tower" />
+              <p>Beetham Tower: Home to the Cloud 23 bar.</p>
             </div>
             <!-- END : ARTICLE IMAGE -->
-            <p>The Manchester Art Gallery, formerly Manchester City Art Gallery, is a publicly owned art museum on Mosley Street in Manchester city centre that has a collection of more than 25,000 objects. The gallery is easy to get to, by getting off at either Market Street or St. Peter's Square Tram station, or by getting of at Picadilly bus stop and walking through Mosley Street.</p>
+            <p>'Cloud 23 is more than just a bar it's a unique venue located at the highest point in Manchester'. Overlooking the entire cityscape Cloud 23 is certainly a place to go if you need to impress. With its floor to ceiling windows, this bar certainly isn't for the light hearted, 23 stories up in Beetham Tower. With a huge range of different, high quality drinks, poured by professionally trained bar staff, expect the prices to be a bit above the budget of a normal student. A strict dress code is also in place, and to go to the bar you have to book in advance, adding to the establishment's upper class ethos</p>
 
-            <p>You can explore their collections of fine art, spanning six centuries and including many major modern and contemporary pieces. The museum is most famous for its 19th century British paintings, particularly the collection of Pre-Raphaelite works.</p>
+            <p>From the cavernous Manchester Arena to the dark, intimate vibes of the  Night and day cafe, Manchester is overflowing with live music venues to suit all tastes and get everybody’s body moving. The information above is a clear indication of what the nightlife has to offer in Manchester fun. Excitement, relaxation and getting away from the stress of university work.</p>
 
-            <p>Manchester Art Gallery is free to enter and open seven days a week. It houses many works of local and international significance, ranging from Joana Vasconcelos: Time Machine (image above), to the recently added Imitation Game which is an exhibition by eight international contemporary artists who explore the theme of machines and the imitation of life. More than half a million people visited the museum in the period of a year, according to figures released in April 2014.</p>
-
-            <div id="map-gorilla" class="map"></div>
+            <div id="map-cloud" class="map"></div>
 
             <!-- BEGIN : REVIEW TITLE -->
             <div class="review-title">
@@ -88,28 +86,28 @@
             <!-- END : REVIEW TITLE -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>David Stansbury <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>Oskar Bretes <span>3 weeks ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star star-gray"></i>
+                <i class="fa fa-star"></i>
               </div>
-              <p>It's a belting night, be there 20th Feb to see the legend stu allen.</p>
+              <p>Great bar, amazing cocktails. The wait can be quite long so a reservation is highly recommended even during periods that should seem calmer. Cloud 23 offers very nice views of the city</p>
             </div>
             <!-- END : REVIEW BOX -->
             <!-- BEGIN : REVIEW BOX -->
             <div class="review-box">
-              <h3>Richard Gregory <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
+              <h3>James Nixon Steel <span>A month ago</span> <i class="fa fa-google-plus"></i></h3>
               <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star star-gray"></i>
+                <i class="fa fa-star"></i>
               </div>
-              <p>Friendly bar near Oxford Road station, with a great selection of food and warm atmosphere. The beer choice is slightly limited but plenty of cocktails on offer. Can be a little noisy downstairs, but there's some extra seating upstairs.</p>
+              <p>FGreat cocktails and a huge selection of spirits to choose from. The view at night is gorgeous. Situated right on the "chin" of beetham tower, you can actually stand on a glass area and see the drop below. Really good experience. Extremely expensive.</p>
             </div>
             <!-- END : REVIEW BOX -->
           </article>
@@ -128,7 +126,7 @@
 
 
   <!--******************** LOCATION DETAILS : Start ********************-->
-  <section class="location-details">
+  <section <?php if($page == 'cloud') {echo 'class="location-details cloud-banner"';} ?> class="location-details">
     <!-- BEGIN : CONTAINER -->
     <div class="container">
       <!-- BEGIN : ROW -->
@@ -141,7 +139,7 @@
             <div class="detail-item">
               <i class="pe-7s-map-marker"></i>
               <h4>Address</h4>
-              <p>Gorilla, 54-56 Whitworth Street, Manchester, M1 5WW</p>
+              <p>Cloud 23, Beetham Tower, 303 Deansgate, Manchester, M3 4LQ</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -152,7 +150,7 @@
             <div class="detail-item">
               <i class="pe-7s-call"></i>
               <h4>Phone</h4>
-              <p>0161 407 0301</p>
+              <p>0161 870 1670</p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>
@@ -163,7 +161,7 @@
             <div class="detail-item">
               <i class="pe-7s-browser"></i>
               <h4>Website</h4>
-              <p><a href="http://www.thisisgorilla.com">thisisgorilla.com</a></p>
+              <p><a href="http://www.cloud23bar.com">www.cloud23bar.com</a></p>
             </div>
             <!-- END : DETAIL ITEM -->
           </div>

@@ -157,5 +157,26 @@
     <a href="/dpm-website/museums/museum-of-transport.php">Details</a>
   </div>
   <!-- END : RELATED PAGES -->
+  <!-- BEGIN : RELATED PAGES -->
+  <div <?php if($current == 'nightlife' && $page !== 'gorilla') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
+    <img src="/dpm-website/images/banners/gorilla-manchester.jpg" alt="Wide shot of Gorilla bar building" />
+    <h4>Gorilla Bar</h4>
+    <a href="/dpm-website/nightlife/gorilla-bar.php">Details</a>
+  </div>
+  <!-- END : RELATED PAGES -->
+  <!-- BEGIN : RELATED PAGES -->
+  <div <?php if($current == 'nightlife' && $page !== 'sankeys') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
+    <img src="/dpm-website/images/banners/sankeys.jpg" alt="shot behind DJ inside Sankeys with people dancing in background and flashing lights" />
+    <h4>Sankeys</h4>
+    <a href="/dpm-website/nightlife/sankeys.php">Details</a>
+  </div>
+  <!-- END : RELATED PAGES -->
+  <!-- BEGIN : RELATED PAGES -->
+  <div <?php if($current == 'nightlife' && $page !== 'cloud') {echo 'class="related-pages show-tab"';} ?> class="related-pages">
+    <img src="/dpm-website/images/banners/cloud23.jpg" alt="Wide shot of inside Cloud23 bar" />
+    <h4>Cloud 23</h4>
+    <a href="/dpm-website/nightlife/cloud23.php">Details</a>
+  </div>
+  <!-- END : RELATED PAGES -->
 </aside>
 <!-- END : ASIDE -->

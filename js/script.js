@@ -2,473 +2,6 @@
 
     'use strict';
 
-    // ======================================
-    // Dummy link
-    // ======================================
-    function init_dummy_link() {
-      // Disable default link behavior for dummy links that have href='#'
-      var $emptyLink = $('a[href=#]');
-      $emptyLink.on('click', function(e){
-        e.preventDefault();
-      });
-    }
-
-
-    // ======================================
-    // Smooth Scroll to element
-    // ======================================
-  	var $scrollTo = $('.scroll-to');
-  	$scrollTo.on('click', function(event){
-  		var $elemOffsetTop = $(this).data('offset-top');
-  		$('html').velocity("scroll", { offset:$(this.hash).offset().top-$elemOffsetTop, duration: 1500, easing:'easeInOutCubic', mobileHA: false});
-  		event.preventDefault();
-  	});
-
-
-    // ======================================
-    // Smooth Scroll to Top button
-    // ======================================
-    function init_smooth_scroll_top() {
-        // browser window scroll (in pixels) after which the "back to top" link is shown
-        var offset = 300,
-        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-        offset_opacity = 1200,
-        //duration of the top scrolling animation (in ms)
-        scroll_top_duration = 1500,
-        //grab the "back to top" link
-        $back_to_top = $('.cd-top');
-
-        //hide or show the "back to top" link
-        $(window).scroll(function() {
-            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-            if ( $(this).scrollTop() > offset_opacity ) {
-                $back_to_top.addClass('cd-fade-out');
-            }
-        });
-
-        $back_to_top.on('click', function(e){
-    			e.preventDefault();
-    			$('html').velocity("scroll", { offset: 0, duration: 1500, easing:'easeInOutCubic', mobileHA: false });
-    		});
-    }
-
-
-    // ======================================
-    // Accordion jumps
-    // ======================================
-    function init_accordion() {
-      $.fn.lvAccordion = function(){
-
-    		var $this = $(this),
-    		    isToggle = $this.hasClass( 'm-toggle' ) ? true : false,
-    		    items = $this.find( '> div' );
-
-    		items.filter( '.m-active' ).find( '.panel-content' ).slideDown( 300 );
-
-    		$this.find( '.panel-title' ).click(function(){
-    			if ( ! $(this).parent().hasClass( 'm-active' ) ) {
-    				if ( ! isToggle ) {
-    					items.filter( '.m-active' ).find( '.panel-content' ).slideUp(300);
-    					items.filter( '.m-active' ).removeClass( 'm-active' );
-    				}
-    				$(this).parent().find( '.panel-content' ).slideDown(300);
-    				$(this).parent().addClass( 'm-active' );
-    			}
-    			else {
-    				$(this).parent().find( '.panel-content' ).slideUp(300);
-    				$(this).parent().removeClass( 'm-active' );
-    			}
-    		});
-
-    	};
-    	if ( $.fn.lvAccordion ) {
-    		$( '.jump-panel' ).each(function(){
-    			$(this).lvAccordion();
-    		});
-    	}
-    }
-
-
-    function init_accordion_sidebar() {
-      $.fn.lvAccordion = function(){
-
-    		var $this = $(this),
-    		isToggle = $this.hasClass( 'm-toggle' ) ? true : false,
-    		items = $this.find( '> li' );
-    		items.filter( '.m-active' ).find( '.category-list' ).slideDown( 300 );
-
-    		$this.find( '.category-title' ).click(function(){
-    			if ( ! $(this).parent().hasClass( 'm-active' ) ) {
-    				if ( ! isToggle ) {
-    					items.filter( '.m-active' ).find( '.category-list' ).slideUp(300);
-    					items.filter( '.m-active' ).removeClass( 'm-active' );
-    				}
-    				$(this).parent().find( '.category-list' ).slideDown(300);
-    				$(this).parent().addClass( 'm-active' );
-    			}
-    			else {
-    				$(this).parent().find( '.category-list' ).slideUp(300);
-    				$(this).parent().removeClass( 'm-active' );
-    			}
-    		});
-
-    	};
-    	if ( $.fn.lvAccordion ) {
-    		$( '.categories' ).each(function(){
-    			$(this).lvAccordion();
-    		});
-    	}
-    }
-
-
-    // ======================================
-    // Google map - Bar Burrito
-    // ======================================
-    function init_map_burrito() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.482481, -2.2488879), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-burrito');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.482481, -2.2488879),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Wagamama
-    // ======================================
-    function init_map_wag() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.480346, -2.2683336), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-wag');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.480346, -2.2683336),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Archie's
-    // ======================================
-    function init_map_archies() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.4742104, -2.2431605), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-archies');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.4742104, -2.2431605),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Bella Italia
-    // ======================================
-    function init_map_bella() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.4822145, -2.2473003), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-bella');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.4822145, -2.2473003),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Manchester Art Gallery
-    // ======================================
-    function init_map_mag() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.4786541, -2.2414114), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-mag');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.4786541, -2.2414114),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Arndale Centre
-    // ======================================
-    function init_map_arndale() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.4842467, -2.241106), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-arn');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.4842467, -2.241106),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Intu Trafford Centre
-    // ======================================
-    function init_map_intu() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.4661126, -2.3490164), // Manchester Art Gallery
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-intu');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.4661126, -2.3490164),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-
-    // ======================================
-    // Google map - Gorilla Bar
-    // ======================================
-    function init_map_gorilla() {
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 15,
-              scrollwheel: false,
-
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(53.474155, -2.2425783), // Gorilla Bar
-
-              // How you would like to style the map.
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
-          };
-
-          // Get the HTML DOM element that will contain your map
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map-gorilla');
-
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
-
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(53.474155, -2.2425783),
-              map: map,
-              icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
-          });
-      }
-    }
-
-    init_dummy_link();
-    init_smooth_scroll_top();
-    init_accordion();
-    init_accordion_sidebar();
-
-    if(document.URL.indexOf("bar-burrito.php") >= 0){
-      init_map_burrito();
-    }
-    if(document.URL.indexOf("wagamama.php") >= 0){
-      init_map_wag();
-    }
-    if(document.URL.indexOf("archies.php") >= 0){
-      init_map_archies();
-    }
-    if(document.URL.indexOf("bella-italia.php") >= 0){
-      init_map_bella();
-    }
-    if(document.URL.indexOf("manchester-art-gallery.php") >= 0){
-      init_map_mag();
-    }
-    if(document.URL.indexOf("arndale.php") >= 0){
-      init_map_arndale();
-    }
-    if(document.URL.indexOf("intu-trafford-centre.php") >= 0){
-      init_map_intu();
-    }
-    if(document.URL.indexOf("gorilla-bar.php") >= 0){
-      init_map_gorilla();
-    }
 
     var WSD = function() {
         this.VERSION = "1.1.0";
@@ -957,6 +490,661 @@ $(document).ready(function() {
     });
 
 })(window.jQuery);
+
+// ======================================
+// Dummy link
+// ======================================
+function init_dummy_link() {
+  // Disable default link behavior for dummy links that have href='#'
+  var $emptyLink = $('a[href=#]');
+  $emptyLink.on('click', function(e){
+    e.preventDefault();
+  });
+}
+
+
+// ======================================
+// Smooth Scroll to element
+// ======================================
+var $scrollTo = $('.scroll-to');
+$scrollTo.on('click', function(event){
+  var $elemOffsetTop = $(this).data('offset-top');
+  $('html').velocity("scroll", { offset:$(this.hash).offset().top-$elemOffsetTop, duration: 1500, easing:'easeInOutCubic', mobileHA: false});
+  event.preventDefault();
+});
+
+
+// ======================================
+// Smooth Scroll to Top button
+// ======================================
+function init_smooth_scroll_top() {
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 1500,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function() {
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        if ( $(this).scrollTop() > offset_opacity ) {
+            $back_to_top.addClass('cd-fade-out');
+        }
+    });
+
+    $back_to_top.on('click', function(e){
+      e.preventDefault();
+      $('html').velocity("scroll", { offset: 0, duration: 1500, easing:'easeInOutCubic', mobileHA: false });
+    });
+}
+
+
+// ======================================
+// Card flip
+// ======================================
+function init_card_flip() {
+  $('.category-item').click(function(){
+   $(this).toggleClass('clicked');
+   return false;
+ });
+}
+
+
+// ======================================
+// Accordion jumps
+// ======================================
+function init_accordion() {
+  $.fn.lvAccordion = function(){
+
+    var $this = $(this),
+        isToggle = $this.hasClass( 'm-toggle' ) ? true : false,
+        items = $this.find( '> div' );
+
+    items.filter( '.m-active' ).find( '.panel-content' ).slideDown( 300 );
+
+    $this.find( '.panel-title' ).click(function(){
+      if ( ! $(this).parent().hasClass( 'm-active' ) ) {
+        if ( ! isToggle ) {
+          items.filter( '.m-active' ).find( '.panel-content' ).slideUp(300);
+          items.filter( '.m-active' ).removeClass( 'm-active' );
+        }
+        $(this).parent().find( '.panel-content' ).slideDown(300);
+        $(this).parent().addClass( 'm-active' );
+      }
+      else {
+        $(this).parent().find( '.panel-content' ).slideUp(300);
+        $(this).parent().removeClass( 'm-active' );
+      }
+    });
+
+  };
+  if ( $.fn.lvAccordion ) {
+    $( '.jump-panel' ).each(function(){
+      $(this).lvAccordion();
+    });
+  }
+}
+
+
+function init_accordion_sidebar() {
+  $.fn.lvAccordion = function(){
+
+    var $this = $(this),
+    isToggle = $this.hasClass( 'm-toggle' ) ? true : false,
+    items = $this.find( '> li' );
+    items.filter( '.m-active' ).find( '.category-list' ).slideDown( 300 );
+
+    $this.find( '.category-title' ).click(function(){
+      if ( ! $(this).parent().hasClass( 'm-active' ) ) {
+        if ( ! isToggle ) {
+          items.filter( '.m-active' ).find( '.category-list' ).slideUp(300);
+          items.filter( '.m-active' ).removeClass( 'm-active' );
+        }
+        $(this).parent().find( '.category-list' ).slideDown(300);
+        $(this).parent().addClass( 'm-active' );
+      }
+      else {
+        $(this).parent().find( '.category-list' ).slideUp(300);
+        $(this).parent().removeClass( 'm-active' );
+      }
+    });
+
+  };
+  if ( $.fn.lvAccordion ) {
+    $( '.categories' ).each(function(){
+      $(this).lvAccordion();
+    });
+  }
+}
+
+
+// ======================================
+// Google map - Bar Burrito
+// ======================================
+function init_map_burrito() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.482481, -2.2488879), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-burrito');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.482481, -2.2488879),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Wagamama
+// ======================================
+function init_map_wag() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.480346, -2.2683336), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-wag');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.480346, -2.2683336),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Archie's
+// ======================================
+function init_map_archies() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4742104, -2.2431605), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-archies');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4742104, -2.2431605),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Bella Italia
+// ======================================
+function init_map_bella() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4822145, -2.2473003), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-bella');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4822145, -2.2473003),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Manchester Art Gallery
+// ======================================
+function init_map_mag() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4786541, -2.2414114), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-mag');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4786541, -2.2414114),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Museum of Science & Indsutry
+// ======================================
+function init_map_mosi() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4773135, -2.2549624), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-mosi');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4773135, -2.2549624),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Museum of Science & Indsutry
+// ======================================
+function init_map_mot() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.503028, -2.2334359), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-mot');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.503028, -2.2334359),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Arndale Centre
+// ======================================
+function init_map_arndale() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4842467, -2.241106), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-arn');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4842467, -2.241106),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Intu Trafford Centre
+// ======================================
+function init_map_intu() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4661126, -2.3490164), // Manchester Art Gallery
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-intu');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4661126, -2.3490164),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Gorilla Bar
+// ======================================
+function init_map_gorilla() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.474155, -2.2425783), // Gorilla Bar
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-gorilla');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.474155, -2.2425783),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Sankeys
+// ======================================
+function init_map_sankeys() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.484919, -2.225953), // Gorilla Bar
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-sankeys');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.484919, -2.225953),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+
+// ======================================
+// Google map - Cloud 23
+// ======================================
+function init_map_cloud() {
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+          // How zoomed in you want the map to start at (always required)
+          zoom: 15,
+          scrollwheel: false,
+
+          // The latitude and longitude to center the map (always required)
+          center: new google.maps.LatLng(53.4754154, -2.2502472), // Gorilla Bar
+
+          // How you would like to style the map.
+          // This is where you would paste any style found on Snazzy Maps.
+          styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"administrative.province","elementType":"labels.icon","stylers":[{"hue":"#ff0000"},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+      };
+
+      // Get the HTML DOM element that will contain your map
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map-cloud');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.4754154, -2.2502472),
+          map: map,
+          icon: "http://s15.postimg.org/9mx28u5bb/pointer.png"
+      });
+  }
+}
+
+init_dummy_link();
+init_smooth_scroll_top();
+init_accordion();
+init_accordion_sidebar();
+
+if (!$('body').hasClass('desktop')) {
+  init_card_flip();
+}
+if(document.URL.indexOf("bar-burrito.php") >= 0){
+  init_map_burrito();
+}
+if(document.URL.indexOf("wagamama.php") >= 0){
+  init_map_wag();
+}
+if(document.URL.indexOf("archies.php") >= 0){
+  init_map_archies();
+}
+if(document.URL.indexOf("bella-italia.php") >= 0){
+  init_map_bella();
+}
+if(document.URL.indexOf("manchester-art-gallery.php") >= 0){
+  init_map_mag();
+}
+if(document.URL.indexOf("museum-of-science-and-industry.php") >= 0){
+  init_map_mosi();
+}
+if(document.URL.indexOf("museum-of-transport.php") >= 0){
+  init_map_mot();
+}
+if(document.URL.indexOf("arndale.php") >= 0){
+  init_map_arndale();
+}
+if(document.URL.indexOf("intu-trafford-centre.php") >= 0){
+  init_map_intu();
+}
+if(document.URL.indexOf("gorilla-bar.php") >= 0){
+  init_map_gorilla();
+}
+if(document.URL.indexOf("sankeys.php") >= 0){
+  init_map_sankeys();
+}
+if(document.URL.indexOf("cloud23.php") >= 0){
+  init_map_cloud();
+}
+
 (function($) {
     'use strict';
     // Initialize layouts and plugins
